@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f6f3ec;
+  --color-cream-deep: #ebe4d6;
+  --color-paper: #fbf9f4;
+  --color-green: #1b5e2a;
+  --color-green-dark: #144823;
+  --color-green-deep: #0e3318;
+  --color-leaf: #3f8f4a;
+  --color-ink: #3a2c22;
+  --color-ink-soft: #5c4638;
+  --color-line: #ddd4c4;
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-script: var(--font-great-vibes), cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #cfe3c8;
+  color: var(--color-green-deep);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.article h2 {
+  margin-top: 2.2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.85rem;
+  line-height: 1.2;
+  color: var(--color-green-deep);
+}
+
+.article h3 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--color-green-dark);
+}
+
+.article p,
+.article li {
+  color: var(--color-ink-soft);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.article p + p {
+  margin-top: 1rem;
+}
+
+.article ul,
+.article ol {
+  margin: 1rem 0 1rem 1.2rem;
+}
+
+.article ul {
+  list-style: disc;
+}
+
+.article ol {
+  list-style: decimal;
+}
+
+.article li + li {
+  margin-top: 0.4rem;
+}
+
+.article a {
+  color: var(--color-green-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.article strong {
+  color: var(--color-ink);
+  font-weight: 650;
+}
