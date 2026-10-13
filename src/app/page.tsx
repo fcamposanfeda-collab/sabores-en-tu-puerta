@@ -43,9 +43,8 @@ export default function HomePage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="relative z-10 mx-auto max-w-xl px-4 pb-8 pt-[32.5vw] text-center sm:pt-[32vw] lg:pb-10">
-          <p className="font-serif text-sm tracking-wide text-green-deep sm:text-base">{site.tagline}</p>
-          <h1 className="mx-auto mt-4 max-w-md font-serif text-lg leading-snug text-green-deep sm:text-xl lg:text-2xl">
+        <div className="relative z-10 mx-auto max-w-xl px-4 pb-8 pt-[24rem] text-center sm:pt-[20rem] lg:pt-[32vw] lg:pb-10">
+          <h1 className="mx-auto max-w-md font-serif text-lg leading-snug text-green-deep sm:text-xl lg:text-2xl">
             <span className="font-semibold">Menú basal</span> con dietas equilibradas, especializadas y adaptadas a cada cliente o usuario.
           </h1>
           <ul className="mx-auto mt-3 grid max-w-md grid-cols-2 justify-center gap-y-5 sm:mt-4 sm:flex sm:gap-0">
@@ -123,7 +122,7 @@ export default function HomePage() {
               },
               {
                 title: "Repartimos en tu zona",
-                text: "Ciudad Real, Puertollano y hasta 60 km de cualquiera de las dos.",
+                text: "Ciudad Real y alrededores. Te lo llevamos a casa.",
                 icon: CourierIcon,
               },
             ].map(({ title, text, icon: Icon }, index, steps) => (
@@ -156,15 +155,15 @@ export default function HomePage() {
           </Link>
         </div>
         <p className="mt-3 max-w-2xl text-sm text-ink-soft">
-          TODO: sustituir por platos reales. Estas fichas enseñan el tipo de cocina y no son todavía la carta que se sirve.
+          Estas imágenes son ejemplos de platos de comida casera que puedas encontrar en tus menús.
         </p>
-        <ul className="mt-8 grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {featured.map((dish) => {
             const photo = publicImage(dish.image);
             return (
-              <li key={dish.slug} className="overflow-hidden rounded-3xl border border-line bg-paper">
+              <li key={dish.slug} className="flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-paper">
                 {photo ? (
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative aspect-[4/3] shrink-0">
                     <Image
                       src={photo}
                       alt={dish.name}
@@ -174,7 +173,7 @@ export default function HomePage() {
                     />
                   </div>
                 ) : null}
-                <div className="p-5">
+                <div className="flex flex-1 flex-col p-5 sm:min-h-56">
                   <h3 className="font-serif text-2xl text-green-deep">
                     <Link href={`/platos/${dish.slug}`} className="hover:underline">{dish.name}</Link>
                   </h3>
@@ -268,7 +267,7 @@ export default function HomePage() {
       <section id="presupuesto" className="scroll-mt-24 bg-paper py-16">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-[1fr_1.1fr]">
           <div>
-            <h2 className="font-serif text-4xl text-green-deep">Pide presupuesto</h2>
+            <h2 className="font-serif text-4xl text-green-deep">Pregunta sin compromiso</h2>
             <p className="mt-3 leading-relaxed text-ink-soft">
               Cuéntanos el servicio, la localidad y para cuántas personas. Te respondemos con una propuesta.
               <span className="mt-1 block">
