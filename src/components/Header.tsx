@@ -9,7 +9,7 @@ import { specializedHub, specializedMenus } from "@/data/specialized-menus";
 
 const links = [
   { href: "/", label: "Inicio", current: (path: string) => path === "/" },
-  { href: "/platos", label: "Nuestros menús", current: (path: string) => path.startsWith("/platos") },
+  { href: "/platos", label: "Nuestros platos", current: (path: string) => path.startsWith("/platos") },
   {
     href: specializedHub.path,
     label: specializedHub.nav,
@@ -37,7 +37,7 @@ function PedirAhora({ className = "", current = false }: { className?: string; c
     <Link
       href="/contacto"
       aria-current={current ? "page" : undefined}
-      className={`inline-flex min-h-11 items-center justify-center rounded-md border border-green-deep px-4 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-green-deep hover:bg-green-deep hover:text-cream ${className}`}
+      className={`inline-flex min-h-11 items-center justify-center rounded-md border border-green-deep px-4 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-green-deep [&:hover]:border-green-deep [&:hover]:bg-green-deep [&:hover]:text-cream ${className}`}
     >
       Pedir información ahora <span aria-hidden="true"> →</span>
     </Link>

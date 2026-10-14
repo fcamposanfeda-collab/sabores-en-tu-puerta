@@ -112,6 +112,26 @@ export const dishes: Dish[] = [
     image: "/images/platos/real-ensalada.jpg",
     example: true,
   },
+  {
+    slug: "marmitako-de-bonito",
+    name: "Marmitako de bonito",
+    description:
+      "Bonito guisado con patata, cebolla y pimiento, en salsa de tomate. Ejemplo de segundo de pescado, de los de cuchara.",
+    categories: ["segundos"],
+    allergens: ["TODO: confirmar. Pescado."],
+    image: "/images/platos/real-marmitako.jpg",
+    example: true,
+  },
+  {
+    slug: "fideua-de-verduras",
+    name: "Fideuá de verduras",
+    description:
+      "Fideos cortos sofritos con verdura de temporada, sin marisco. Ejemplo de primero para casa, colegio o menú basal.",
+    categories: ["primeros", "infantiles", "especiales"],
+    allergens: ["TODO: confirmar. Gluten."],
+    image: "/images/platos/real-fideua-verduras.jpg",
+    example: true,
+  },
 ];
 
 export function getDish(slug: string) {
