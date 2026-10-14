@@ -12,9 +12,9 @@ export const faqs: Faq[] = [
     home: true,
   },
   {
-    question: "¿Hasta dónde repartís desde Ciudad Real?",
+    question: "¿Lleváis comida a domicilio en toda la provincia de Ciudad Real?",
     answer:
-      "Desde Ciudad Real repartimos en la ciudad y en localidades hasta 60 km a la redonda. El mismo criterio vale desde Puertollano. Si un pueblo entra en el radio de uno de los dos, se puede pedir. En el límite, o si el punto es una finca fuera del casco, lo confirmamos al presupuestar.",
+      "Desde Ciudad Real repartimos en la ciudad y en localidades cercanas. Pregunta por tu localidad. Si un pueblo entra en el radio, se puede pedir. En el límite, o si el punto es una finca fuera del casco, lo confirmamos al presupuestar.",
     home: true,
   },
   {
@@ -70,7 +70,7 @@ export const faqs: Faq[] = [
   {
     question: "¿Hacéis eventos que no sean de caza?",
     answer:
-      "Sí. Además de las monterías hay catering para eventos y catering personalizado: celebraciones, comidas de grupo o un menú pensado para una ocasión concreta. Siempre dentro de Ciudad Real, Puertollano y 60 km, y siempre con un presupuesto previo, sin precio en la web.",
+      "Sí. Las celebraciones, las comidas de grupo y los menús para una ocasión concreta se piden como catering personalizado para eventos. Siempre dentro de Ciudad Real, Puertollano y 60 km, y siempre con un presupuesto previo, sin precio en la web.",
   },
   {
     question: "¿Qué ingredientes utilizáis?",

@@ -14,7 +14,7 @@ export function buildLlms() {
   const lines = [
     `# ${site.name}`,
     "",
-    `> ${site.name} elabora comida casera y la reparte a domicilio en ${site.areaSummary} También sirve colectividades (colegios, guarderías, residencias y centros de mayores), catering para empresas (coffee break, tapas y catering pequeño de oficina), catering personalizado, eventos y catering para monterías (desayuno campero, almuerzo y comida). Zona: Ciudad Real, Puertollano y hasta 60 km. No publica precios: el siguiente paso es pedir presupuesto por teléfono o WhatsApp al ${site.phoneDisplay}.`,
+    `> ${site.name} elabora comida casera y la reparte a domicilio en ${site.areaSummary} También sirve colectividades (colegios, guarderías, residencias y centros de mayores), catering para empresas (coffee break, tapas y catering pequeño de oficina), catering personalizado para eventos y catering para monterías (desayuno campero, almuerzo y comida). Zona: Ciudad Real, Puertollano y hasta 60 km. No publica precios: el siguiente paso es pedir presupuesto por teléfono o WhatsApp al ${site.phoneDisplay}.`,
     "",
     "## Datos de contacto",
     "",

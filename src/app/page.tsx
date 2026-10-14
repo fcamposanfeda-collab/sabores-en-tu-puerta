@@ -16,11 +16,21 @@ import { faqSchema, graph, localBusinessSchema, organizationSchema, websiteSchem
 
 const homeFaqs = faqs.filter((faq) => faq.home);
 const featured = dishes.slice(0, 4);
+const homeServices = [
+  services.find((service) => service.slug === "comida-a-domicilio")!,
+  services.find((service) => service.slug === "colectividades")!,
+  ...services.filter(
+    (service) =>
+      service.slug !== "comida-a-domicilio" &&
+      service.slug !== "colectividades" &&
+      service.slug !== "catering-monterias-eventos-caza",
+  ),
+];
 
 const pillars = [
   { title: "Comida casera y de calidad", text: "Elaborada con sabor de casa, no como una línea industrial anónima.", icon: HouseIcon },
   { title: "Dietas equilibradas y adaptadas", text: "Menú basal y adaptaciones cuando el centro o la casa lo indican.", icon: LeafIcon },
-  { title: "Con el respaldo de una nutricionista", text: "El menú basal se adapta a lo que necesitas, sin que lo organices tú.", icon: CrossIcon },
+  { title: "Con el respaldo de un nutricionista", text: "El menú basal se adapta a lo que necesitas, sin que lo organices tú.", icon: CrossIcon },
   { title: "Estrictos controles de Sanidad", text: "Trabajamos con control higiénico.", icon: ShieldIcon },
 ];
 
@@ -79,12 +89,10 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="servicios-title">
         <h2 id="servicios-title" className="font-serif text-4xl text-green-deep">Servicios</h2>
         <p className="mt-3 max-w-2xl text-ink-soft">
-          Cinco formas de llevar la misma cocina. Elige la que se parece a tu encargo o cuéntanoslo y te orientamos.
+          Elige la que necesites y cuéntanos más para poder orientarte.
         </p>
         <ul className="mt-8 grid gap-4 md:grid-cols-2">
-          {services
-            .filter((service) => service.slug !== "catering-monterias-eventos-caza")
-            .map((service) => (
+          {homeServices.map((service) => (
             <li key={service.slug} className="relative hover:z-10">
               <Link
                 href={`/servicios/${service.slug}`}
@@ -246,7 +254,7 @@ export default function HomePage() {
           <article>
             <h2 className="font-serif text-4xl text-green-deep">Catering en tu empresa y eventos</h2>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              Coffee break, tapas y un catering pequeño para la oficina o para el evento. En Ciudad Real, Puertollano y hasta 60 km.
+              Coffee break, tapas y un catering pequeño para la oficina o para tu evento en Ciudad Real y alrededores.
             </p>
             <Link href="/servicios/catering-empresa-y-eventos" className="mt-4 inline-block font-semibold text-green-dark underline">
               Catering para empresas

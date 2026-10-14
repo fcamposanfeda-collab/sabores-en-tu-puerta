@@ -8,9 +8,9 @@ import { pageMeta } from "@/lib/seo";
 import { breadcrumbSchema, dishSchema, graph } from "@/lib/schema";
 
 export const metadata = pageMeta({
-  title: "Platos y menús caseros sin precios",
+  title: "Platos y menús caseros",
   description:
-    "Carta de ejemplo de comida casera: primeros, segundos y menús adaptados. Sin precios, en Ciudad Real.",
+    "Carta de ejemplo de comida casera: primeros, segundos y menús adaptados, en Ciudad Real.",
   path: "/platos",
 });
 

@@ -15,19 +15,19 @@ export const specializedHub = {
   nav: "Menús especializados",
   title: "Menús especializados a domicilio en Ciudad Real",
   description:
-    "Menú basal de nuestra nutricionista según tu caso: gimnasio, infancia, intolerancias, mayores o un diagnóstico. Ciudad Real y Puertollano.",
+    "Menú basal de nuestro nutricionista según tu caso: gimnasio, infancia, intolerancias, mayores o un diagnóstico. Ciudad Real y Puertollano.",
   h1: "Menús especializados, sin que tengas que organizarlos",
-  lead: "El menú basal lo plantea nuestra nutricionista a partir de lo que necesitas. Tú no montas la semana ni decides plato a plato: adaptamos la comida y te la llevamos.",
+  lead: "El menú basal lo plantea nuestro nutricionista a partir de lo que necesitas. Tú no montas la semana ni decides plato a plato: adaptamos la comida y te la llevamos.",
   paragraphs: [
     "Quien nos escribe suele buscar eso: una comida casera ya pensada. Partimos de un menú basal equilibrado y lo ajustamos al caso. Puede ser para quien entrena, para un niño, para una intolerancia, para una persona mayor o para una pauta ligada a un diagnóstico.",
-    "Nos cuentas la necesidad, para cuántas personas es y en qué localidad. La nutricionista prepara la propuesta. El reparto es en Ciudad Real, Puertollano y hasta 60 km. No hay precios publicados: cada encargo se concreta al pedir la información.",
+    "Nos cuentas la necesidad, para cuántas personas es y en qué localidad. El nutricionista prepara la propuesta. El reparto es en Ciudad Real, Puertollano y hasta 60 km. No hay precios publicados: cada encargo se concreta al pedir la información.",
     "No diagnosticamos, no sustituimos a tu médico y no prometemos un efecto sobre la salud. Si ya existe una pauta, el menú se cocina según lo que nos indiquéis.",
   ],
   faqs: [
     {
       question: "¿Tengo que decir yo qué se come cada día?",
       answer:
-        "No. Cuentas la necesidad y la nutricionista propone el menú basal ya adaptado. Tú confirmas si encaja y nosotros lo elaboramos y lo repartimos.",
+        "No. Cuentas la necesidad y el nutricionista propone el menú basal ya adaptado. Tú confirmas si encaja y nosotros lo elaboramos y lo repartimos.",
     },
     {
       question: "¿El menú sirve si hay un diagnóstico?",
@@ -44,7 +44,7 @@ export const specializedMenus: SpecializedMenu[] = [
     card: "Menú basal ajustado a los días de entreno, sin que calcules los platos.",
     title: "Menú para el gimnasio a domicilio en Ciudad Real",
     description:
-      "Menú basal para quien entrena en Ciudad Real y Puertollano. La nutricionista lo adapta a tu rutina. Tú no organizas la comida.",
+      "Menú basal para quien entrena en Ciudad Real y Puertollano. El nutricionista lo adapta a tu rutina. Tú no organizas la comida.",
     h1: "Menú para el gimnasio, ya pensado",
     lead: "Si entrenas, el menú basal se ajusta a lo que nos cuentes de tu rutina. No tienes que calcular raciones ni montar el tupper.",
     paragraphs: [
@@ -65,18 +65,18 @@ export const specializedMenus: SpecializedMenu[] = [
     card: "Menú basal para niños en casa. La familia no diseña la semana.",
     title: "Menú infantil a domicilio en Ciudad Real",
     description:
-      "Menú basal infantil a domicilio en Ciudad Real y Puertollano. Lo plantea la nutricionista y se adapta si hay alguna pauta.",
+      "Menú basal infantil a domicilio en Ciudad Real y Puertollano. Lo plantea el nutricionista y se adapta si hay alguna pauta.",
     h1: "Menú infantil para casa, sin montarlo tú",
     lead: "Comida casera para niños, con un menú basal de la semana. Si hay una pauta, se adapta. La familia no tiene que diseñar cada comida.",
     paragraphs: [
       "Este menú es para casa. Si el encargo es el comedor de un colegio o una guardería, el camino es el servicio de colectividades: allí se habla con el centro.",
-      "En casa nos contáis la edad, cuántos comen y si hay algún alimento que no toma o una intolerancia. La nutricionista propone el menú basal y lo ajusta a eso.",
+      "En casa nos contáis la edad, cuántos comen y si hay algún alimento que no toma o una intolerancia. El nutricionista propone el menú basal y lo ajusta a eso.",
       "No prometemos un efecto sobre el crecimiento ni sobre la salud. Organizamos la comida para que encaje con lo que la familia nos indica.",
     ],
     includes: [
       "Menú basal infantil para comer en casa",
       "Adaptación si hay un alimento que no toma o una intolerancia",
-      "Propuesta hecha por la nutricionista",
+      "Propuesta hecha por el nutricionista",
       "Reparto en el radio de Ciudad Real y de Puertollano",
     ],
   },
@@ -90,7 +90,7 @@ export const specializedMenus: SpecializedMenu[] = [
     h1: "Menú para intolerancias, elaborado aparte",
     lead: "Si hay lactosa, gluten u otra intolerancia, el menú basal se cocina sin ese ingrediente. Nos lo indicas y no tienes que revisar cada plato.",
     paragraphs: [
-      "La nutricionista parte del menú basal y lo deja sin lo que no puedes tomar. Puede ser lactosa, gluten u otra intolerancia que nos señales. El detalle se confirma en el encargo, porque depende de la elaboración de ese día.",
+      "El nutricionista parte del menú basal y lo deja sin lo que no puedes tomar. Puede ser lactosa, gluten u otra intolerancia que nos señales. El detalle se confirma en el encargo, porque depende de la elaboración de ese día.",
       "No publicamos un sello de apto para celíacos ni una lista cerrada de alérgenos. Eso se concreta contigo antes de cocinar.",
       "Si la intolerancia viene de una pauta médica, cocinamos según lo que nos indiquéis. No diagnosticamos.",
     ],
@@ -112,7 +112,7 @@ export const specializedMenus: SpecializedMenu[] = [
     lead: "Un menú basal pensado para quien ya no quiere organizar la comida. Si hace falta una elaboración más suave, se adapta.",
     paragraphs: [
       "Sirve para una persona en casa y también cuando lo pide una residencia o un centro de mayores. En un centro, la propuesta se habla con quien lo lleva. En casa, con la familia o con la propia persona.",
-      "La nutricionista ajusta textura y tipo de plato a lo que nos indiquéis. No cambiamos una elaboración por nuestra cuenta si no nos lo habéis pedido.",
+      "El nutricionista ajusta textura y tipo de plato a lo que nos indiquéis. No cambiamos una elaboración por nuestra cuenta si no nos lo habéis pedido.",
       "No prometemos un efecto sobre la salud. El servicio es la comida adaptada y el reparto.",
     ],
     includes: [
@@ -130,7 +130,7 @@ export const specializedMenus: SpecializedMenu[] = [
     description:
       "Menú basal adaptado a la pauta de tu diagnóstico en Ciudad Real y Puertollano. No diagnosticamos: cocinamos según lo que nos indiques.",
     h1: "Menú adaptado a tu diagnóstico",
-    lead: "Si ya tienes un diagnóstico y una pauta de comida, partimos de ahí. La nutricionista prepara el menú basal para que encaje, y tú no tienes que traducirlo a platos.",
+    lead: "Si ya tienes un diagnóstico y una pauta de comida, partimos de ahí. E nutricionista prepara el menú basal para que encaje, y tú no tienes que traducirlo a platos.",
     paragraphs: [
       "Nos cuentas la pauta que ya tienes, la de tu médico o la que nos indiques. Puede ser, por ejemplo, una comida sin gluten, una pauta para diabetes o una textura concreta. El menú se elabora según eso.",
       "No diagnosticamos, no sustituimos a tu médico y no prometemos que la comida mejore un diagnóstico. Organizamos el menú para que respete la indicación que nos dais.",

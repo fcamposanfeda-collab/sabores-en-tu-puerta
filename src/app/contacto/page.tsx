@@ -9,7 +9,7 @@ import { breadcrumbSchema, graph, localBusinessSchema } from "@/lib/schema";
 export const metadata = pageMeta({
   title: "Contacto de comida a domicilio",
   description:
-    "Contacto de comida casera, colectividades o catering en Ciudad Real y Puertollano. WhatsApp, teléfono y formulario.",
+    "Contacto de comida casera, colectividades o catering en la provincia de Ciudad Real. WhatsApp, teléfono y formulario.",
   path: "/contacto",
 });
 

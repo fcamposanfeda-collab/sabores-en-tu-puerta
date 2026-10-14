@@ -87,7 +87,7 @@ export const services: Service[] = [
     description:
       "Comida casera a domicilio en Ciudad Real y Puertollano, hasta 60 km. Menús equilibrados sin precio en web. Escríbenos por WhatsApp.",
     h1: "Comida casera a domicilio en Ciudad Real y Puertollano",
-    lead: "Llevamos comida casera a tu puerta en Ciudad Real, Puertollano y localidades hasta 60 km de cualquiera de las dos. Tú eliges el tipo de menú, nosotros preparamos el presupuesto y repartimos. No hay carta con precios ni suscripción.",
+    lead: "Llevamos comida casera a tu puerta en Ciudad Real, Puertollano y localidades hasta 60 km de cualquiera de las dos. Tú eliges el tipo de menú, nosotros preparamos el presupuesto y repartimos.",
     paragraphs: [
       "Este servicio es para casas particulares: una persona, una pareja o quien ese día come en casa y quiere sabor de casa sin organizarlo todo. El tono es cercano. Si lo que necesitas es un colegio, una residencia o una montería, hay servicios específicos; si dudas, cuéntanoslo y te orientamos.",
       "Los menús son equilibrados y pueden adaptarse. Hay ejemplos de primeros y segundos en la carta. La comida se elabora con ingredientes de primeras marcas y con tratamientos de conservación pensados para cuidar los nutrientes hasta el momento de consumirla.",
@@ -107,7 +107,7 @@ export const services: Service[] = [
       },
       {
         title: "Recibes el presupuesto",
-        text: "Te proponemos el menú y el importe. Sin precios genéricos colgados en la web.",
+        text: "Te proponemos el menú y el importe.",
       },
       {
         title: "Repartimos en tu puerta",
@@ -121,60 +121,66 @@ export const services: Service[] = [
           "Sí. Puertollano es uno de los dos centros de reparto, junto con Ciudad Real. Cubrimos la ciudad y las localidades que quedan hasta 60 km. El día y el menú se cierran al pedir presupuesto, por teléfono o por WhatsApp.",
       },
       {
-        question: "¿Por qué no hay precios en la web?",
-        answer:
-          "Porque el encargo cambia según el menú, las personas y la localidad. Publicar un precio único no describiría el servicio. Pides presupuesto y te respondemos con una propuesta concreta, sin suscripción.",
-      },
-      {
         question: "¿Puedo pedir solo para mí?",
         answer:
           "Puedes consultar un encargo particular, sea para una persona o para varias. Indica el número aproximado de comensales en el formulario o por WhatsApp y te decimos si encaja en la ruta de tu localidad.",
       },
     ],
-    related: ["colectividades", "catering-personalizado", "eventos"],
+    related: ["colectividades", "catering-personalizado"],
     posts: ["menus-colegios-guarderias"],
   },
   {
     slug: "catering-personalizado",
-    name: "Catering personalizado",
-    nav: "Catering personalizado",
-    card: "Un menú hecho para tu celebración, comida de empresa o reunión.",
-    title: "Catering personalizado en Ciudad Real",
+    name: "Catering personalizado para eventos",
+    nav: "Catering personalizado para eventos",
+    card: "Menú a medida para una celebración, un evento o una comida en casa.",
+    title: "Catering personalizado para eventos en Ciudad Real",
     description:
-      "Catering personalizado en Ciudad Real y Puertollano. Menús a medida para celebraciones y reuniones. Presupuesto sin precios publicados.",
-    h1: "Catering personalizado en Ciudad Real y Puertollano",
-    lead: "El catering personalizado es un menú a medida para una celebración, una comida de trabajo o una reunión en casa o en un espacio que tú eliges, dentro de Ciudad Real, Puertollano y 60 km. Se pide por presupuesto, no por catálogo de precios.",
+      "Catering personalizado para celebraciones y eventos en Ciudad Real y Puertollano. Menú a medida y presupuesto, sin precios en la web.",
+    h1: "Catering personalizado para eventos en Ciudad Real y Puertollano",
+    lead: "Preparamos un menú a medida para tu celebración o tu evento en Ciudad Real, Puertollano y hasta 60 km. Puede ser en casa o en el espacio que elijas. Nos dices la ocasión, el lugar y los comensales, y el presupuesto sale para esa fecha.",
     paragraphs: [
-      "Aquí el punto de partida eres tú: cuántas personas, qué ocasión, si hay alguna dieta o alérgeno y qué tipo de comida te imaginas. A partir de eso proponemos un menú casero, no una plantilla idéntica para todo el mundo.",
-      "Puede ser una comida familiar, un bautizo, una junta o un detalle para un equipo. Si la ocasión es una montería o un evento de caza, conviene el servicio específico de campo. Si es un evento con otro formato, míralo en la página de eventos o cuéntanoslo y lo encajamos.",
-      "Seguimos con ingredientes de primeras marcas y con la misma lógica de conservación. El presupuesto incluye lo que acordemos por escrito: menú, localidad y fecha. Lo que no esté escrito, no lo damos por hecho.",
+      "El punto de partida es el encargo: cuántas personas, qué ocasión, si hay alguna dieta o alérgeno y qué tipo de comida te imaginas. A partir de eso proponemos un menú casero, no una plantilla idéntica para todo el mundo.",
+      "Un evento pide más coordinación que un pedido de casa. Hace falta la hora de servicio, el acceso al espacio, el número de personas y un menú que se entienda de un vistazo. Por eso pedimos esos datos al principio, antes de hablar de importe. Cubrimos celebraciones familiares, bautizos, comidas de grupo y encuentros que necesitan un menú cuidado.",
+      "La comida sigue siendo casera, con ingredientes de primeras marcas y la misma lógica de conservación. Las monterías y los eventos de caza tienen su propia página, porque el ritmo del campo no es el de una celebración. El coffee break y las tapas de oficina están en el catering de empresa.",
+      "No hay paquetes con precio publicado. Cada encargo se presupuesta. Si la fecha todavía es orientativa, puedes escribir igual: con la localidad y un número aproximado de comensales basta para empezar. Lo que no quede escrito en el presupuesto, no lo damos por hecho.",
     ],
     includes: [
-      "Menú propuesto según la ocasión y los comensales",
-      "Adaptación si nos indicas dietas o alérgenos",
-      "Servicio en la zona de Ciudad Real y Puertollano",
-      "Presupuesto previo y sin permanencia",
-      "Contacto directo para ajustar la propuesta",
+      "Menú de celebración o encuentro, propuesto para esa fecha y esas personas",
+      "Servicio en casa o en el espacio que indiques, dentro de la zona",
+      "Dietas y alérgenos si se indican al pedir la propuesta",
+      "Presupuesto por escrito antes de confirmar, sin permanencia",
+      "Teléfono y WhatsApp para afinar detalles",
     ],
     steps: [
       {
-        title: "La ocasión",
-        text: "Fecha orientativa, lugar, número de personas y si hay algo que no pueda faltar o que haya que evitar.",
+        title: "Fecha, lugar y aforo",
+        text: "Aunque la fecha sea aproximada, necesitamos saber dónde es, para cuántas personas y si hay algo que no pueda faltar o que haya que evitar.",
       },
       {
-        title: "La propuesta",
-        text: "Te enviamos un menú y un presupuesto. Se puede ajustar antes de confirmar.",
+        title: "Menú y presupuesto",
+        text: "Te proponemos la comida y el importe. Lo revisamos juntos si hay que cambiar un plato o el aforo.",
       },
       {
         title: "El día",
-        text: "Elaboramos y llevamos la comida al punto acordado dentro de la zona de reparto.",
+        text: "Elaboramos y llevamos el catering al punto acordado, dentro del radio de 60 km.",
       },
     ],
     faqs: [
       {
-        question: "¿El catering personalizado sirve para una comida en casa?",
+        question: "¿Hacéis catering para eventos en Puertollano?",
         answer:
-          "Sí, si la casa está en Ciudad Real, Puertollano o a menos de 60 km de una de las dos. Cuéntanos la fecha, las personas y el tipo de menú. Te respondemos con una propuesta y un presupuesto, sin precios fijos en la web.",
+          "Sí. Puertollano entra en la zona, igual que Ciudad Real y las localidades del radio de 60 km. Para un evento pedimos lugar, fecha orientativa y número de comensales, y devolvemos un presupuesto. No hay tarifa publicada.",
+      },
+      {
+        question: "¿Sirve también para una comida en casa?",
+        answer:
+          "Sí, si la casa está en Ciudad Real, Puertollano o a menos de 60 km de una de las dos. Cuéntanos la fecha, las personas y el tipo de menú. La propuesta y el presupuesto se envían por escrito.",
+      },
+      {
+        question: "¿Con cuánta antelación hay que pedir un evento?",
+        answer:
+          "No publicamos un plazo fijo. Cuanto antes nos cuentes la fecha, más fácil es encajarla en el reparto. Si el evento es pronto, llama o escribe por WhatsApp al 675 601 543 y te decimos si llegamos.",
       },
       {
         question: "¿Podéis adaptar el menú si hay alérgenos?",
@@ -182,68 +188,12 @@ export const services: Service[] = [
           "Sí, si nos los indicas al pedir la información. La adaptación se hace sobre lo que conocemos del encargo. En la carta de ejemplo los alérgenos están marcados como pendientes de confirmar en los platos reales.",
       },
       {
-        question: "¿En qué se diferencia del catering de eventos?",
-        answer:
-          "El personalizado se centra en el menú y en las personas de ese encargo. El de eventos cubre celebraciones y formatos con más logística. Si no tienes claro cuál encaja, escríbenos y te decimos por dónde seguir. Los dos se presupuestan igual.",
-      },
-    ],
-    related: ["eventos", "comida-a-domicilio", "catering-monterias-eventos-caza"],
-    posts: ["catering-monteria"],
-  },
-  {
-    slug: "eventos",
-    name: "Eventos exclusivos",
-    nav: "Eventos",
-    card: "Catering para celebraciones y eventos en la provincia.",
-    title: "Catering para eventos en Ciudad Real",
-    description:
-      "Catering para eventos en Ciudad Real y Puertollano. Celebraciones con comida casera y presupuesto a medida. Cuéntanos fecha y comensales.",
-    h1: "Catering para eventos en Ciudad Real y Puertollano",
-    lead: "Organizamos el catering de celebraciones y eventos en Ciudad Real, Puertollano y hasta 60 km, con comida casera y un presupuesto hecho para esa fecha. Nos dices el tipo de evento, el lugar y los comensales.",
-    paragraphs: [
-      "Un evento pide más coordinación que un pedido de casa: hora de servicio, acceso al espacio, número de personas y un menú que se entienda de un vistazo. Por eso pedimos esos datos al principio, antes de hablar de importe.",
-      "Cubrimos celebraciones familiares y encuentros que necesitan un menú cuidado, con la misma base de cocina casera, ingredientes de primeras marcas y dietas adaptadas cuando nos las señaláis. Las monterías y los eventos de caza tienen su propia página, porque el ritmo del campo no es el de un salón.",
-      "No hay paquetes con precio publicado. Cada evento se presupuesta. Si la fecha todavía es orientativa, puedes enviar el formulario igual: con la localidad y un número aproximado de comensales basta para empezar.",
-    ],
-    includes: [
-      "Menú de celebración o encuentro, propuesto para esa fecha",
-      "Reparto en la zona de servicio",
-      "Posibilidad de dietas adaptadas si se indican al reservar la propuesta",
-      "Presupuesto por escrito antes de confirmar",
-      "Vía directa por teléfono y WhatsApp el día que haya que afinar detalles",
-    ],
-    steps: [
-      {
-        title: "Fecha, lugar y aforo",
-        text: "Aunque la fecha sea aproximada, necesitamos saber dónde es y para cuántas personas.",
-      },
-      {
-        title: "Menú y presupuesto",
-        text: "Te proponemos la comida y el importe. Lo revisamos juntos si hay que cambiar un plato.",
-      },
-      {
-        title: "Servicio",
-        text: "Elaboramos y llevamos el catering al espacio, dentro del radio de 60 km.",
-      },
-    ],
-    faqs: [
-      {
-        question: "¿Hacéis catering para eventos en Puertollano?",
-        answer:
-          "Sí. Puertollano entra en la zona de servicio, igual que Ciudad Real y las localidades del radio. Para un evento pedimos lugar, fecha orientativa y número de comensales, y devolvemos un presupuesto. No hay tarifa colgada en la web.",
-      },
-      {
-        question: "¿Con cuánta antelación hay que pedir un evento?",
-        answer:
-          "No publicamos un plazo fijo. Cuanto antes nos cuentes la fecha, más fácil es encajarla en el reparto. Si el evento es pronto, llama o escribe por WhatsApp y te decimos si llegamos.",
-      },
-      {
         question: "¿El catering de una montería se pide aquí?",
         answer:
-          "Las monterías, los desayunos camperos y las comidas de campo están en el servicio de catering para eventos de caza. Si tu evento es de ese tipo, entra por esa página para que la propuesta encaje con el ritmo del día.",
+          "No. Las monterías, los desayunos camperos y las comidas de campo están en el servicio de catering para eventos de caza. Si tu jornada es de ese tipo, entra por esa página para que la propuesta encaje con el ritmo del día.",
       },
     ],
-    related: ["catering-empresa-y-eventos", "catering-personalizado", "catering-monterias-eventos-caza"],
+    related: ["comida-a-domicilio", "catering-empresa-y-eventos", "catering-monterias-eventos-caza"],
     posts: ["catering-monteria"],
   },
   {
@@ -297,10 +247,10 @@ export const services: Service[] = [
       {
         question: "¿También cubrís el evento de la empresa?",
         answer:
-          "Sí. Presentaciones, aniversarios de empresa y jornadas entran en este servicio. Una celebración familiar más amplia puede verse también en la página de eventos. Una montería tiene su propia página. En todos los casos el presupuesto es previo.",
+          "Sí. Presentaciones, aniversarios de empresa y jornadas entran en este servicio. Una celebración familiar o un menú a medida se pide en catering personalizado para eventos. Una montería tiene su propia página. En todos los casos el presupuesto es previo.",
       },
     ],
-    related: ["eventos", "catering-personalizado", "comida-a-domicilio"],
+    related: ["catering-personalizado", "comida-a-domicilio"],
     posts: [],
   },
   {
@@ -356,7 +306,7 @@ export const services: Service[] = [
           "El servicio está pensado con desayuno campero, almuerzo y comida. Si una jornada solo necesita una de las tres, dímelo al pedir información y presupuestamos esa parte. No obligamos a contratar las tres si no hacen falta.",
       },
     ],
-    related: ["eventos", "catering-personalizado"],
+    related: ["catering-personalizado"],
     posts: ["catering-monteria"],
   },
 ];

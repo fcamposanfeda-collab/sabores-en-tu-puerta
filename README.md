@@ -1,6 +1,6 @@
 # Sabores en tu Puerta
 
-Web corporativa de comida casera y reparto a domicilio en Ciudad Real, Puertollano y hasta 60 km. Hecha con Next.js (App Router), TypeScript y Tailwind CSS. Pensada para Vercel.
+Web corporativa de comida casera y reparto a domicilio en Ciudad Real y alrededores. Hecha con Next.js (App Router), TypeScript y Tailwind CSS. Pensada para Vercel.
 
 No hay precios. Los botones piden presupuesto, llamada o WhatsApp.
 

@@ -31,10 +31,10 @@ export const localities: Locality[] = [
     kmFromCiudadReal: 0,
     kmFromPuertollano: 36.7,
     nearby: ["miguelturra", "poblete", "carrion-de-calatrava", "pozuelo-de-calatrava"],
-    serviceSlugs: ["comida-a-domicilio", "colectividades", "eventos", "catering-personalizado"],
+    serviceSlugs: ["comida-a-domicilio", "colectividades", "catering-personalizado"],
     lead: "En Ciudad Real repartimos comida casera a domicilio y servimos a colectividades, celebraciones y catering. Es uno de los dos centros del servicio, junto con Puertollano. El presupuesto se pide por teléfono, WhatsApp o formulario; en la web no hay precios.",
     context:
-      "La capital concentra colegios, guarderías, residencias, centros de mayores y casas particulares en distintos barrios, además de la universidad y los servicios públicos. Por eso aquí tienen peso tanto el menú de casa como el de colectividades. Si el encargo es una celebración en un domicilio o en un local de la ciudad, se trata como evento o como catering personalizado, no como un pedido genérico.",
+      "La capital concentra colegios, guarderías, residencias, centros de mayores y casas particulares en distintos barrios, además de la universidad y los servicios públicos. Por eso aquí tienen peso tanto el menú de casa como el de colectividades. Si el encargo es una celebración en un domicilio o en un local de la ciudad, se trata como catering personalizado para eventos, no como un pedido genérico.",
     delivery:
       "El reparto urbano se organiza por zonas de la ciudad. Al pedir presupuesto indica el barrio o la dirección aproximada, el número de comensales y el día. No publicamos una hora fija de paso: se acuerda en la propuesta. Desde Ciudad Real también salen rutas hacia pueblos del alrededor que están a menos de 60 km.",
     faqs: [
@@ -57,7 +57,7 @@ export const localities: Locality[] = [
     kmFromCiudadReal: 36.7,
     kmFromPuertollano: 0,
     nearby: ["almodovar-del-campo", "argamasilla-de-calatrava", "cabezarados", "mestanza"],
-    serviceSlugs: ["comida-a-domicilio", "colectividades", "catering-monterias-eventos-caza", "eventos"],
+    serviceSlugs: ["comida-a-domicilio", "colectividades", "catering-monterias-eventos-caza", "catering-personalizado"],
     lead: "En Puertollano hay comida casera a domicilio y servicio para colectividades, eventos y monterías de la comarca. Es el segundo centro de reparto, a unos 37 km de Ciudad Real. Se pide presupuesto; no hay precios en la web.",
     context:
       "Puertollano tiene vida de barrio, centros educativos, residencias y un entorno de campo y dehesa hacia Almodóvar, el Valle de Alcudia y la sierra. Eso cambia el tipo de encargos respecto a la capital: además de la casa y el comedor, aquí pesan las comidas de finca y las monterías. El menú sigue siendo casero y, cuando hace falta, adaptado.",
@@ -161,7 +161,7 @@ export const localities: Locality[] = [
     kmFromCiudadReal: 11.4,
     kmFromPuertollano: 34.2,
     nearby: ["ciudad-real", "almagro", "miguelturra", "bolanos-de-calatrava"],
-    serviceSlugs: ["comida-a-domicilio", "colectividades", "eventos"],
+    serviceSlugs: ["comida-a-domicilio", "colectividades", "catering-personalizado"],
     lead: "Pozuelo de Calatrava está a unos 11 km de Ciudad Real, en el camino de Almagro. Repartimos comida casera a domicilio y podemos presupuestar colectividades o una celebración en el pueblo.",
     context:
       "El pueblo queda entre la capital y Almagro, así que un mismo desplazamiento puede encajar encargos de casa y algún evento pequeño. No es un núcleo industrial: el servicio se plantea a escala de municipio, con menús caseros y adaptación si nos la pides.",
@@ -213,7 +213,7 @@ export const localities: Locality[] = [
     kmFromCiudadReal: 21.8,
     kmFromPuertollano: 40.9,
     nearby: ["bolanos-de-calatrava", "pozuelo-de-calatrava", "calzada-de-calatrava"],
-    serviceSlugs: ["eventos", "comida-a-domicilio", "catering-personalizado", "colectividades"],
+    serviceSlugs: ["catering-personalizado", "comida-a-domicilio", "colectividades"],
     lead: "En Almagro repartimos comida casera a domicilio y catering para celebraciones, a unos 22 km de Ciudad Real. También hay propuesta para colegios, guarderías y centros de mayores. El precio se da en presupuesto.",
     context:
       "Almagro es villa de teatro, con el Corral de Comedias y una plaza mayor que atrae visitas y celebraciones. Además del día a día del pueblo, aquí tienen sentido los encargos de evento: una comida de grupo, una celebración o un menú para quien recibe en casa. El servicio sigue siendo cocina casera, no un montaje de banquete con precio cerrado.",
@@ -223,7 +223,7 @@ export const localities: Locality[] = [
       {
         question: "¿Hay catering para eventos en Almagro?",
         answer:
-          "Sí. Almagro está a unos 22 km de Ciudad Real. Podemos presupuestar un evento, un catering personalizado o comida a domicilio. Dinos fecha, lugar y comensales.",
+          "Sí. Almagro está a unos 22 km de Ciudad Real. Podemos presupuestar un catering personalizado para el evento, o comida a domicilio. Dinos fecha, lugar y comensales.",
       },
       {
         question: "¿Llegáis a alojamientos o casas del casco antiguo?",
@@ -239,7 +239,7 @@ export const localities: Locality[] = [
     kmFromCiudadReal: 20.4,
     kmFromPuertollano: 41.7,
     nearby: ["almagro", "pozuelo-de-calatrava", "daimiel"],
-    serviceSlugs: ["comida-a-domicilio", "colectividades", "eventos"],
+    serviceSlugs: ["comida-a-domicilio", "colectividades", "catering-personalizado"],
     lead: "Bolaños de Calatrava, a unos 20 km de Ciudad Real y junto a Almagro, tiene comida a domicilio, menús de colectividades y catering de celebración. Se pide presupuesto sin precios publicados.",
     context:
       "Es uno de los núcleos con más población del Campo de Calatrava, al lado de Almagro pero con su propio día a día: colegios, casas y celebraciones de pueblo. El servicio no se limita al visitante de Almagro. Quien vive en Bolaños puede pedir para casa o para un centro.",
@@ -369,7 +369,7 @@ export const localities: Locality[] = [
     kmFromCiudadReal: 37.6,
     kmFromPuertollano: 6.7,
     nearby: ["puertollano", "argamasilla-de-calatrava", "brazatortas", "cabezarados"],
-    serviceSlugs: ["catering-monterias-eventos-caza", "comida-a-domicilio", "colectividades", "eventos"],
+    serviceSlugs: ["catering-monterias-eventos-caza", "comida-a-domicilio", "colectividades", "catering-personalizado"],
     lead: "Almodóvar del Campo está a unos 7 km de Puertollano. Desde ahí repartimos comida casera y es una de las bases naturales para catering de monterías y de campo, además de menús para los centros del municipio.",
     context:
       "El pueblo vive junto a Puertollano, con castillo, dehesa y fincas alrededor. Un pedido de casa se parece al de un barrio de Puertollano por distancia. Un evento de caza, en cambio, se presupuesta con el paraje, porque el término es grande y el camino manda.",
@@ -421,7 +421,7 @@ export const localities: Locality[] = [
     kmFromCiudadReal: 34.1,
     kmFromPuertollano: 28.8,
     nearby: ["almagro", "argamasilla-de-calatrava", "granatula-de-calatrava"],
-    serviceSlugs: ["comida-a-domicilio", "colectividades", "eventos", "catering-monterias-eventos-caza"],
+    serviceSlugs: ["comida-a-domicilio", "colectividades", "catering-personalizado", "catering-monterias-eventos-caza"],
     lead: "Calzada de Calatrava está a medio camino: unos 34 km de Ciudad Real y 29 de Puertollano. Repartimos comida casera y presupuestamos colectividades, celebraciones y jornadas de campo dentro del término.",
     context:
       "Es un pueblo del sur del Campo de Calatrava, con santuario y un término que ya mira hacia la sierra. El casco pide servicio de casa y de centros. Las afueras pueden pedir catering de campo. Las dos cosas se presupuestan por separado si no son el mismo encargo.",
@@ -499,7 +499,7 @@ export const localities: Locality[] = [
     kmFromCiudadReal: 48.1,
     kmFromPuertollano: 72.3,
     nearby: ["membrilla", "daimiel", "moral-de-calatrava"],
-    serviceSlugs: ["colectividades", "comida-a-domicilio", "eventos"],
+    serviceSlugs: ["colectividades", "comida-a-domicilio", "catering-personalizado"],
     lead: "Manzanares está a unos 48 km de Ciudad Real, dentro del radio, en el cruce de la A-4. Repartimos comida casera y preparamos menús para colegios, residencias y eventos del municipio. No salimos de Puertollano para esta ruta.",
     context:
       "Es una ciudad de paso y de servicios, con centros propios y celebraciones que no dependen de la capital. El encargo se trata como el de cualquier localidad cubierta: presupuesto, menú y reparto. Al estar más lejos que un pueblo del alfoz, conviene pedir con la fecha clara para encajar la ruta.",
@@ -551,7 +551,7 @@ export const localities: Locality[] = [
     kmFromCiudadReal: 34.9,
     kmFromPuertollano: 48.5,
     nearby: ["manzanares", "valdepenas", "bolanos-de-calatrava"],
-    serviceSlugs: ["comida-a-domicilio", "colectividades", "eventos"],
+    serviceSlugs: ["comida-a-domicilio", "colectividades", "catering-personalizado"],
     lead: "Moral de Calatrava está a unos 35 km de Ciudad Real, en la zona de viñedo hacia Valdepeñas. Hay comida a domicilio, colectividades y catering de celebración. El presupuesto se pide antes de elaborar.",
     context:
       "El pueblo está en el este del Campo de Calatrava, con bodegas y un casco que no depende de un polígono industrial. El servicio es de cocina casera para quien vive aquí o celebra aquí. Valdepeñas queda más lejos y tiene su propia página.",
@@ -578,7 +578,7 @@ export const localities: Locality[] = [
     kmFromPuertollano: 63.2,
     edge: true,
     nearby: ["moral-de-calatrava", "santa-cruz-de-mudela", "manzanares"],
-    serviceSlugs: ["colectividades", "comida-a-domicilio", "eventos"],
+    serviceSlugs: ["colectividades", "comida-a-domicilio", "catering-personalizado"],
     lead: "Valdepeñas está a unos 53 km de Ciudad Real, dentro del radio y cerca del límite. Hay comida casera a domicilio, menús para colectividades y catering de eventos. Cada fecha se confirma porque la ruta es de las más largas.",
     context:
       "Es la ciudad del vino, al sureste, con colegios, residencias y celebraciones propias. Entra desde Ciudad Real. Desde Puertollano supera los 60 km, así que no se atiende como extensión de Puertollano. Conviene no dejar el pedido para el mismo día sin haberlo hablado.",
@@ -632,7 +632,7 @@ export const localities: Locality[] = [
     kmFromPuertollano: 55.8,
     edge: true,
     nearby: ["valdepenas", "viso-del-marques", "almuradiel"],
-    serviceSlugs: ["comida-a-domicilio", "colectividades", "eventos"],
+    serviceSlugs: ["comida-a-domicilio", "colectividades", "catering-personalizado"],
     lead: "Santa Cruz de Mudela está a unos 55 km de Ciudad Real y de Puertollano, dentro del radio y cerca del borde sur. Hay comida a domicilio, colectividades y eventos, siempre con la fecha confirmada en el presupuesto.",
     context:
       "El pueblo está en la A-4, antes de bajar hacia Despeñaperros. Tiene entidad propia, no es una pedanía de Valdepeñas. El servicio cubre casas y centros del municipio, y celebraciones si el aforo y el lugar están claros.",
@@ -659,7 +659,7 @@ export const localities: Locality[] = [
     kmFromPuertollano: 50.8,
     edge: true,
     nearby: ["santa-cruz-de-mudela", "almuradiel", "san-lorenzo-de-calatrava"],
-    serviceSlugs: ["eventos", "catering-personalizado", "comida-a-domicilio", "catering-monterias-eventos-caza"],
+    serviceSlugs: ["catering-personalizado", "comida-a-domicilio", "catering-monterias-eventos-caza"],
     lead: "Viso del Marqués entra desde Puertollano, a unos 51 km. Desde Ciudad Real se pasa un poco de 60, así que la ruta de referencia es la del sur. Hay catering, comida a domicilio y posibilidad de jornada de campo, con confirmación por estar cerca del límite.",
     context:
       "El pueblo es conocido por el palacio del Marqués de Santa Cruz. Un evento en el municipio se presupuesta con el lugar concreto, sobre todo si el acceso es el del conjunto histórico y no una calle cualquiera. El día a día de una casa también se puede pedir.",
@@ -686,7 +686,7 @@ export const localities: Locality[] = [
     kmFromPuertollano: 56.9,
     edge: true,
     nearby: ["viso-del-marques", "santa-cruz-de-mudela", "fuencaliente"],
-    serviceSlugs: ["catering-monterias-eventos-caza", "comida-a-domicilio", "eventos"],
+    serviceSlugs: ["catering-monterias-eventos-caza", "comida-a-domicilio", "catering-personalizado"],
     lead: "Almuradiel está a unos 57 km de Puertollano, en la bajada de Despeñaperros, dentro del radio y en el borde. Desde Ciudad Real no entra. Se puede pedir comida a domicilio o un catering de campo, y se confirma cada encargo.",
     context:
       "Es puerta de Despeñaperros, con monte y fincas, no un barrio de la capital. Tiene más sentido un catering de jornada o una comida en el pueblo que una ruta diaria improvisada. Por eso la fecha manda.",

@@ -7,7 +7,7 @@ export function MealComposition() {
         Qué lleva cada comida
       </h2>
       <p className="mt-3 max-w-3xl text-lg leading-relaxed text-ink-soft">
-        La comida se compone de primer plato, segundo plato, pan y postre. Esos cuatro elementos van siempre en el menú basal. La nutricionista adapta el contenido a tu caso; tú no organizas las partes.
+        La comida se compone de primer plato, segundo plato, pan y postre. Esos cuatro elementos van siempre en el menú basal. El nutricionista adapta el contenido a tu caso.
       </p>
       <ol className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {parts.map((part, index) => (

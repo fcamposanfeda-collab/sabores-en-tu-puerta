@@ -2,6 +2,15 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  async redirects() {
+    return [
+      {
+        source: "/servicios/eventos",
+        destination: "/servicios/catering-personalizado",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     qualities: [75, 90],
   },

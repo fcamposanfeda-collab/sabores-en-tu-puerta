@@ -27,11 +27,10 @@ export default function AboutPage() {
       />
       <article className="mx-auto max-w-3xl space-y-5 px-5 py-12 text-lg leading-relaxed text-ink-soft">
         <p className="rounded-2xl border border-line bg-paper p-4 text-sm">
-          TODO: contrastar este texto con las diapositivas de Sobre nosotros, Compromisos y Catering de caza. En esta entrega no se recibieron esas capturas, así que la página usa solo los datos confirmados en el encargo.
         </p>
         <h2 className="font-serif text-4xl text-green-deep">Qué hacemos</h2>
         <p>
-          Cocinamos para casas, para colectividades y para celebraciones. En colectividades entran colegios, guarderías, residencias y centros de mayores. En el campo, el catering de monterías contempla desayuno campero, almuerzo y comida. En casa, es comida a domicilio sin suscripción y sin precios colgados.
+          Cocinamos para casas, para colectividades y para celebraciones. En colectividades entran colegios, guarderías, residencias y centros de mayores. En el campo, el catering de monterías contempla desayuno campero, almuerzo y comida. En casa, es comida a domicilio sin suscripción.
         </p>
         <h2 className="font-serif text-4xl text-green-deep">Cómo trabajamos</h2>
         <p>
@@ -39,7 +38,7 @@ export default function AboutPage() {
         </p>
         <h2 className="font-serif text-4xl text-green-deep">Mayores y dietas adaptadas</h2>
         <p>
-          En residencias y centros de mayores el menú no es una carta fija de restaurante. Se adapta a lo que el centro indica: texturas, dietas y particularidades. Hay respaldo de una nutricionista en la forma de plantear los menús. No prometemos resultados de salud ni publicamos un número de colegiación: TODO si quieres añadir el nombre y la acreditación, con su permiso.
+          En residencias y centros de mayores el menú no es una carta fija de restaurante. Se adapta a lo que el centro indica: texturas, dietas y particularidades. Hay respaldo de un nutricionista en la forma de plantear los menús. No prometemos resultados de salud ni publicamos un número de colegiación: TODO si quieres añadir el nombre y la acreditación, con su permiso.
         </p>
         <h2 className="font-serif text-4xl text-green-deep">Compromisos</h2>
         <ul className="list-disc space-y-2 pl-5">
@@ -48,8 +47,8 @@ export default function AboutPage() {
           <li>Conservación orientada a cuidar los nutrientes.</li>
           <li>Menús equilibrados y adaptados cuando nos lo pedís.</li>
           <li>Controles de higiene en la elaboración. TODO: publicar el registro sanitario si se quiere mostrar.</li>
-          <li>Presupuesto claro antes de confirmar, sin precios genéricos en la web.</li>
-          <li>Zona declarada: Ciudad Real, Puertollano y 60 km. Si no entra, se dice.</li>
+          <li>Presupuesto claro antes de confirmar, sin precios genéricos.</li>
+          <li>Zona declarada: Provincia de Ciudad Real.</li>
         </ul>
         <p>
           TODO: años de trayectoria, equipo, obrador y fotografías propias del servicio. No se han inventado.
