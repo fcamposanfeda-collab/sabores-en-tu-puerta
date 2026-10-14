@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "Comida casera a domicilio en Ciudad Real y Puertollano, hasta 60 km. Menús para casas, colegios y residencias. Pide presupuesto.",
+    "Comida casera a domicilio en Ciudad Real y Puertollano, hasta 60 km. Menús para casas, colegios y residencias.",
   applicationName: site.name,
   authors: [{ name: site.name }],
   alternates: { canonical: "/" },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "Comida casera a domicilio en Ciudad Real",
     description:
-      "Comida casera a domicilio en Ciudad Real y Puertollano, hasta 60 km. Pide presupuesto sin precios en la web.",
+      "Comida casera a domicilio en Ciudad Real y Puertollano, hasta 60 km. Sin precios en la web.",
   },
   twitter: { card: "summary_large_image" },
   verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION

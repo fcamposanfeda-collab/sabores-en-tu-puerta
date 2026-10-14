@@ -2,7 +2,8 @@ import { site } from "@/data/site";
 import { services } from "@/data/services";
 import { enabledLocalities, localities, nearestHub, nearestKm } from "@/data/localities";
 import { faqs } from "@/data/faqs";
-import { dishCategories } from "@/data/dishes";
+import { dishCategories, dishes } from "@/data/dishes";
+import { specializedHub, specializedMenus } from "@/data/specialized-menus";
 import { getPosts } from "@/lib/blog";
 
 function origin() {
@@ -13,7 +14,7 @@ export function buildLlms() {
   const lines = [
     `# ${site.name}`,
     "",
-    `> ${site.name} elabora comida casera y la reparte a domicilio en ${site.areaSummary} También sirve colectividades (colegios, guarderías, residencias y centros de mayores), catering personalizado, eventos y catering para monterías (desayuno campero, almuerzo y comida). No publica precios: el siguiente paso es pedir presupuesto.`,
+    `> ${site.name} elabora comida casera y la reparte a domicilio en ${site.areaSummary} También sirve colectividades (colegios, guarderías, residencias y centros de mayores), catering para empresas (coffee break, tapas y catering pequeño de oficina), catering personalizado, eventos y catering para monterías (desayuno campero, almuerzo y comida). Zona: Ciudad Real, Puertollano y hasta 60 km. No publica precios: el siguiente paso es pedir presupuesto por teléfono o WhatsApp al ${site.phoneDisplay}.`,
     "",
     "## Datos de contacto",
     "",
@@ -36,12 +37,21 @@ export function buildLlms() {
     `- [Datos clave](${origin()}/datos-clave)`,
     `- [Contacto](${origin()}/contacto)`,
     `- [Sobre nosotros](${origin()}/sobre-nosotros)`,
+    `- [Catering para empresas](${origin()}/servicios/catering-empresa-y-eventos): coffee break, tapas y catering de oficina en Ciudad Real y Puertollano`,
     "",
     "## Servicios",
     "",
     ...services.map(
       (service) =>
         `- [${service.name}](${origin()}/servicios/${service.slug}): ${service.card}`,
+    ),
+    "",
+    "## Menús especializados",
+    "",
+    "El menú basal lo plantea la nutricionista según la necesidad que indique la persona. Cada comida lleva primer plato, segundo plato, pan y postre. No se diagnostica ni se promete un efecto sobre la salud. No hay precios publicados.",
+    `- [${specializedHub.nav}](${origin()}${specializedHub.path})`,
+    ...specializedMenus.map(
+      (menu) => `- [${menu.nav}](${origin()}${specializedHub.path}/${menu.slug}): ${menu.card}`,
     ),
     "",
     "## Zonas dentro del radio",
@@ -60,7 +70,9 @@ export function buildLlms() {
     "## Carta",
     "",
     "Los platos publicados son ejemplos de cocina casera española, marcados para sustituir por la carta real. No deben citarse como menú confirmado.",
-    ...dishCategories.map((category) => `- ${category.label}`),
+    ...dishCategories
+      .filter((category) => dishes.some((dish) => dish.categories.includes(category.slug)))
+      .map((category) => `- ${category.label}`),
     "",
   ];
   return lines.join("\n");

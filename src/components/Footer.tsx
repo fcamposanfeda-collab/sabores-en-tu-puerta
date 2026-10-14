@@ -11,7 +11,7 @@ export function Footer() {
         <div className="md:col-span-1">
           <Logo height={108} light />
           <p className="mt-4 text-sm leading-relaxed text-cream/80">
-            Comida casera y reparto a domicilio en {site.areaSummary}
+            Comida casera y reparto a domicilio en la provincia de Ciudad Real
           </p>
         </div>
         <div>
@@ -30,6 +30,7 @@ export function Footer() {
           <p className="font-serif text-xl">La casa</p>
           <ul className="mt-3 space-y-2 text-sm">
             <li><Link className="hover:underline" href="/platos">Nuestros platos</Link></li>
+            <li><Link className="hover:underline" href="/menus-especializados">Menús especializados</Link></li>
             <li><Link className="hover:underline" href="/zonas-de-reparto">Zonas de reparto</Link></li>
             <li><Link className="hover:underline" href="/sobre-nosotros">Sobre nosotros</Link></li>
             <li><Link className="hover:underline" href="/blog">Blog</Link></li>
@@ -42,10 +43,6 @@ export function Footer() {
           <p className="font-serif text-xl">Contacto</p>
           <address className="mt-3 space-y-2 text-sm not-italic leading-relaxed">
             <strong className="block font-sans">{site.name}</strong>
-            <span className="block">{site.address.streetAddress}</span>
-            <span className="block">
-              {site.address.postalCode} {site.address.addressLocality}
-            </span>
             <a className="block hover:underline" href={`tel:${site.phoneTel}`}>
               {site.phoneDisplay}
             </a>

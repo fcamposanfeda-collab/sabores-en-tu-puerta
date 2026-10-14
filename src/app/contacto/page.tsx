@@ -7,9 +7,9 @@ import { pageMeta } from "@/lib/seo";
 import { breadcrumbSchema, graph, localBusinessSchema } from "@/lib/schema";
 
 export const metadata = pageMeta({
-  title: "Pedir presupuesto de comida a domicilio",
+  title: "Contacto de comida a domicilio",
   description:
-    "Pide presupuesto de comida casera, colectividades o catering en Ciudad Real y Puertollano. WhatsApp, teléfono y formulario.",
+    "Contacto de comida casera, colectividades o catering en Ciudad Real y Puertollano. WhatsApp, teléfono y formulario.",
   path: "/contacto",
 });
 

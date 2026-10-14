@@ -14,6 +14,9 @@ export type DishCard = {
 };
 
 export function DishBrowser({ dishes }: { dishes: DishCard[] }) {
+  const categories = dishCategories.filter((category) =>
+    dishes.some((dish) => dish.categories.includes(category.slug)),
+  );
   const [active, setActive] = useState<DishCategory | "todos">("todos");
   const visible = useMemo(
     () =>
@@ -29,7 +32,7 @@ export function DishBrowser({ dishes }: { dishes: DishCard[] }) {
         <FilterButton current={active} value="todos" onSelect={setActive}>
           Todos
         </FilterButton>
-        {dishCategories.map((category) => (
+        {categories.map((category) => (
           <FilterButton
             key={category.slug}
             current={active}
@@ -55,10 +58,7 @@ export function DishBrowser({ dishes }: { dishes: DishCard[] }) {
                 )}
               </div>
               <div className="flex flex-1 flex-col p-5">
-                <p className="text-xs uppercase tracking-[0.14em] text-leaf">
-                  TODO: sustituir por platos reales
-                </p>
-                <h2 className="mt-2 font-serif text-2xl text-green-deep">
+                <h2 className="font-serif text-2xl text-green-deep">
                   <Link href={`/platos/${dish.slug}`} className="hover:underline">
                     {dish.name}
                   </Link>

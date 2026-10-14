@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const title = `${dish.name}: comida casera`.slice(0, 60);
   return pageMeta({
     title,
-    description: `${dish.description} Ejemplo de carta, sin precio. Pide presupuesto en Ciudad Real o Puertollano.`.slice(0, 155),
+    description: `${dish.description} Ejemplo de carta, sin precio, en Ciudad Real o Puertollano.`.slice(0, 155),
     path: `/platos/${dish.slug}`,
   });
 }
@@ -52,10 +52,7 @@ export default async function DishPage({ params }: { params: Promise<{ slug: str
           className="min-h-72 rounded-[2rem]"
         />
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.14em] text-leaf">
-            TODO: sustituir por platos reales
-          </p>
-          <h2 className="mt-4 font-serif text-3xl text-green-deep">Categorías</h2>
+          <h2 className="font-serif text-3xl text-green-deep">Categorías</h2>
           <ul className="mt-3 flex flex-wrap gap-2">
             {dish.categories.map((category) => (
               <li key={category} className="rounded-full border border-line px-3 py-1 text-sm">

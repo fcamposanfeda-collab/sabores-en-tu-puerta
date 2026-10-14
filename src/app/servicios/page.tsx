@@ -8,7 +8,7 @@ import { breadcrumbSchema, graph, serviceSchema } from "@/lib/schema";
 export const metadata = pageMeta({
   title: "Servicios de comida casera y catering",
   description:
-    "Colectividades, comida a domicilio, catering personalizado, eventos y monterías en Ciudad Real y Puertollano. Pide presupuesto.",
+    "Colectividades, comida a domicilio, catering de empresa, eventos y monterías en Ciudad Real y Puertollano.",
   path: "/servicios",
 });
 
@@ -35,7 +35,7 @@ export default function ServiciosPage() {
         crumbs={crumbs}
         eyebrow="Servicios"
         title="Comida casera, colectividades y catering en Ciudad Real"
-        lead="Cinco servicios, una misma cocina. Todos se piden por presupuesto, cubren Ciudad Real, Puertollano y hasta 60 km, y ninguno tiene un precio publicado."
+        lead="Seis servicios, una misma cocina. Todos se piden por presupuesto, cubren Ciudad Real, Puertollano y hasta 60 km, y ninguno tiene un precio publicado."
       />
       <div className="mx-auto grid max-w-6xl gap-5 px-5 py-12 md:grid-cols-2">
         {services.map((service) => (

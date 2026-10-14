@@ -8,7 +8,7 @@ import { breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
 export const metadata = pageMeta({
   title: "Preguntas frecuentes de comida a domicilio",
   description:
-    "Respuestas sobre reparto en Ciudad Real y Puertollano, menús para mayores, monterías y cómo pedir presupuesto. Sin precios ocultos: no hay precios.",
+    "Respuestas sobre reparto en Ciudad Real y Puertollano, menús para mayores y monterías. Sin precios ocultos: no hay precios.",
   path: "/preguntas-frecuentes",
 });
 

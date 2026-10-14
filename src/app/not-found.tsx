@@ -6,7 +6,7 @@ export default function NotFound() {
       <p className="text-xs font-semibold uppercase tracking-[0.16em] text-leaf">Error 404</p>
       <h1 className="mt-3 font-serif text-5xl text-green-deep">Esta página no está en la carta</h1>
       <p className="mt-4 text-lg text-ink-soft">
-        El enlace no corresponde a ninguna página. Puedes volver al inicio, ver los servicios o pedir presupuesto.
+        El enlace no corresponde a ninguna página. Puedes volver al inicio o ver los servicios.
       </p>
       <ul className="mt-6 space-y-2 text-green-dark underline">
         <li><Link href="/">Inicio</Link></li>

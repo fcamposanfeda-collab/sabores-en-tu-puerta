@@ -71,11 +71,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 </Link>
               </li>
             ))}
-            <li>
-              <Link href="/contacto" className="text-green-dark underline">
-                Pedir presupuesto
-              </Link>
-            </li>
           </ul>
         </aside>
       </article>

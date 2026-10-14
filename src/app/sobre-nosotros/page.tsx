@@ -39,7 +39,7 @@ export default function AboutPage() {
         </p>
         <h2 className="font-serif text-4xl text-green-deep">Mayores y dietas adaptadas</h2>
         <p>
-          En residencias y centros de mayores el menú no es una carta fija de restaurante. Se adapta a lo que el centro indica: texturas, dietas y particularidades. Hay respaldo de una dietista en la forma de plantear los menús. No prometemos resultados de salud ni publicamos un número de colegiación: TODO si quieres añadir el nombre y la acreditación, con su permiso.
+          En residencias y centros de mayores el menú no es una carta fija de restaurante. Se adapta a lo que el centro indica: texturas, dietas y particularidades. Hay respaldo de una nutricionista en la forma de plantear los menús. No prometemos resultados de salud ni publicamos un número de colegiación: TODO si quieres añadir el nombre y la acreditación, con su permiso.
         </p>
         <h2 className="font-serif text-4xl text-green-deep">Compromisos</h2>
         <ul className="list-disc space-y-2 pl-5">

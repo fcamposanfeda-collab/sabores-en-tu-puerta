@@ -1,6 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
-import { dishCategories } from "@/data/dishes";
+import { dishCategories, dishes } from "@/data/dishes";
 import { enabledLocalities } from "@/data/localities";
 import { services } from "@/data/services";
 import { site } from "@/data/site";
@@ -30,7 +30,7 @@ const rows: [string, string][] = [
   ["CIF", site.cif],
   ["Domicilio", `${site.address.streetAddress}, ${site.address.postalCode} ${site.address.addressLocality}`],
   ["Horario", site.openingHours],
-  ["Carta publicada", `Ejemplos por categorías: ${dishCategories.map((category) => category.label).join(", ")}. Pendiente de la carta real.`],
+  ["Carta publicada", `Ejemplos por categorías: ${dishCategories.filter((category) => dishes.some((dish) => dish.categories.includes(category.slug))).map((category) => category.label).join(", ")}. Pendiente de la carta real.`],
 ];
 
 export default function FactsPage() {

@@ -119,7 +119,7 @@ export const localities: Locality[] = [
       {
         question: "¿Llegáis con comida a domicilio a Poblete?",
         answer:
-          "Sí. Poblete está a unos 7 km de Ciudad Real, muy dentro del radio. Pide presupuesto indicando personas y día. No hay lista de precios en la web.",
+          "Sí. Poblete está a unos 7 km de Ciudad Real, muy dentro del radio. Indica personas y día al escribirnos. No hay lista de precios en la web.",
       },
       {
         question: "¿Podéis servir una comida familiar en una casa de Poblete?",
@@ -275,7 +275,7 @@ export const localities: Locality[] = [
       {
         question: "¿Hacéis comida a domicilio en Daimiel?",
         answer:
-          "Sí. Daimiel está a unos 29 km de Ciudad Real. Hay comida casera para casa y propuesta de colectividades. Pide presupuesto con el número de comensales y el día.",
+          "Sí. Daimiel está a unos 29 km de Ciudad Real. Hay comida casera para casa y propuesta de colectividades. Indica el número de comensales y el día.",
       },
       {
         question: "¿Llegáis a las pedanías de Daimiel?",
@@ -405,7 +405,7 @@ export const localities: Locality[] = [
       {
         question: "¿Repartís en Argamasilla de Calatrava?",
         answer:
-          "Sí. Está a unos 17 km de Puertollano y 27 de Ciudad Real. Es la Argamasilla del Campo de Calatrava, no la de Alba. Pide presupuesto con el tipo de servicio.",
+          "Sí. Está a unos 17 km de Puertollano y 27 de Ciudad Real. Es la Argamasilla del Campo de Calatrava, no la de Alba. Indica el tipo de servicio.",
       },
       {
         question: "¿Argamasilla de Alba también entra?",
@@ -431,7 +431,7 @@ export const localities: Locality[] = [
       {
         question: "¿Hay comida a domicilio en Calzada de Calatrava?",
         answer:
-          "Sí. El pueblo está dentro del radio de los dos centros, más cerca de Puertollano en línea recta. Pide presupuesto para casa, para un centro o para un evento.",
+          "Sí. El pueblo está dentro del radio de los dos centros, más cerca de Puertollano en línea recta. Sirve para casa, para un centro o para un evento.",
       },
       {
         question: "¿Servís celebraciones fuera del casco?",
@@ -509,7 +509,7 @@ export const localities: Locality[] = [
       {
         question: "¿Hay comida a domicilio en Manzanares?",
         answer:
-          "Sí. Manzanares está a unos 48 km de Ciudad Real, dentro de los 60. Pide presupuesto para casa, para un centro o para un evento. Puertollano queda a más de 70 km y no es la base.",
+          "Sí. Manzanares está a unos 48 km de Ciudad Real, dentro de los 60. Sirve para casa, para un centro o para un evento. Puertollano queda a más de 70 km y no es la base.",
       },
       {
         question: "¿Hace falta más antelación que en Ciudad Real?",
@@ -642,7 +642,7 @@ export const localities: Locality[] = [
       {
         question: "¿Hay comida casera a domicilio en Santa Cruz de Mudela?",
         answer:
-          "Sí, dentro del radio de 60 km. Está a unos 55 km de los dos centros. Pide presupuesto con fecha, porque la ruta se confirma.",
+          "Sí, dentro del radio de 60 km. Está a unos 55 km de los dos centros. Indica la fecha, porque la ruta se confirma.",
       },
       {
         question: "¿Cubrís el polígono o solo el casco?",
@@ -669,7 +669,7 @@ export const localities: Locality[] = [
       {
         question: "¿Llegáis a Viso del Marqués?",
         answer:
-          "Sí desde Puertollano, a unos 51 km. Desde Ciudad Real el núcleo queda justo por encima de 60 km. Pide presupuesto y confirma la dirección.",
+          "Sí desde Puertollano, a unos 51 km. Desde Ciudad Real el núcleo queda justo por encima de 60 km. Confirma la dirección al escribir.",
       },
       {
         question: "¿Podéis hacer un catering en el pueblo?",
@@ -826,7 +826,7 @@ export const localities: Locality[] = [
       {
         question: "¿Repartís en Hinojosas de Calatrava?",
         answer:
-          "Sí. Está a unos 9 km de Puertollano, dentro de la zona sin estar en el borde. Pide presupuesto por teléfono, WhatsApp o formulario.",
+          "Sí. Está a unos 9 km de Puertollano, dentro de la zona sin estar en el borde. Puedes escribir por teléfono, WhatsApp o formulario.",
       },
       {
         question: "¿Hace falta un pedido grande para que lleguéis?",

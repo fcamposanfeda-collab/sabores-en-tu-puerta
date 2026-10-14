@@ -62,6 +62,12 @@ export const faqs: Faq[] = [
       "No. Cada comida, menú de colectividad o catering se acuerda con su presupuesto. Cuando termina ese encargo, no se renueva solo ni se cobra de nuevo si no lo pides otra vez. Si quieres repetir, se hace una solicitud nueva.",
   },
   {
+    question: "¿Hacéis coffee break o catering para empresas en Ciudad Real?",
+    answer:
+      "Sí. Llevamos coffee break, tapas y un catering pequeño a oficinas, salas y eventos de empresa en Ciudad Real, Puertollano y hasta 60 km. Hace falta la dirección, la hora y el número de personas. El presupuesto se envía por escrito; en la web no hay tarifa. WhatsApp y teléfono: 675 601 543.",
+    home: true,
+  },
+  {
     question: "¿Hacéis eventos que no sean de caza?",
     answer:
       "Sí. Además de las monterías hay catering para eventos y catering personalizado: celebraciones, comidas de grupo o un menú pensado para una ocasión concreta. Siempre dentro de Ciudad Real, Puertollano y 60 km, y siempre con un presupuesto previo, sin precio en la web.",

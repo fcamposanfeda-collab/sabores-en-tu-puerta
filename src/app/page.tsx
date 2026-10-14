@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { CallButton, WhatsappButton } from "@/components/Buttons";
+import { MealComposition } from "@/components/MealComposition";
 import { ContactForm } from "@/components/ContactForm";
 import { FaqList } from "@/components/FaqList";
 import { JsonLd } from "@/components/JsonLd";
@@ -19,8 +20,8 @@ const featured = dishes.slice(0, 4);
 const pillars = [
   { title: "Comida casera y de calidad", text: "Elaborada con sabor de casa, no como una línea industrial anónima.", icon: HouseIcon },
   { title: "Dietas equilibradas y adaptadas", text: "Menú basal y adaptaciones cuando el centro o la casa lo indican.", icon: LeafIcon },
-  { title: "Con el respaldo de una dietista", text: "Las propuestas de menú se apoyan en criterio dietético.", icon: CrossIcon },
-  { title: "Estrictos controles de Sanidad", text: "Trabajamos con control higiénico. TODO: número de registro sanitario, si quieres publicarlo.", icon: ShieldIcon },
+  { title: "Con el respaldo de una nutricionista", text: "El menú basal se adapta a lo que necesitas, sin que lo organices tú.", icon: CrossIcon },
+  { title: "Estrictos controles de Sanidad", text: "Trabajamos con control higiénico.", icon: ShieldIcon },
 ];
 
 export default function HomePage() {
@@ -36,12 +37,13 @@ export default function HomePage() {
       />
       <section className="relative overflow-hidden bg-[#ede9dd]">
         <Image
-          src="/images/hero/portada-hero.jpg"
+          src="/images/hero/portada.jpg"
           alt="Sabores en tu Puerta"
           fill
           priority
+          quality={90}
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-top"
         />
         <div className="relative z-10 mx-auto max-w-xl px-4 pb-8 pt-[24rem] text-center sm:pt-[20rem] lg:pt-[32vw] lg:pb-10">
           <h1 className="mx-auto max-w-md font-serif text-lg leading-snug text-green-deep sm:text-xl lg:text-2xl">
@@ -77,7 +79,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="servicios-title">
         <h2 id="servicios-title" className="font-serif text-4xl text-green-deep">Servicios</h2>
         <p className="mt-3 max-w-2xl text-ink-soft">
-          Cuatro formas de llevar la misma cocina. Elige la que se parece a tu encargo o cuéntanoslo y te orientamos.
+          Cinco formas de llevar la misma cocina. Elige la que se parece a tu encargo o cuéntanoslo y te orientamos.
         </p>
         <ul className="mt-8 grid gap-4 md:grid-cols-2">
           {services
@@ -185,6 +187,12 @@ export default function HomePage() {
         </ul>
       </section>
 
+      <section className="bg-paper py-16">
+        <div className="mx-auto max-w-6xl px-5">
+          <MealComposition />
+        </div>
+      </section>
+
       <section className="bg-green-deep py-16 text-cream" aria-labelledby="porque-title">
         <div className="mx-auto max-w-6xl px-5">
           <h2 id="porque-title" className="font-serif text-4xl">Por qué elegirnos</h2>
@@ -236,12 +244,12 @@ export default function HomePage() {
             </Link>
           </article>
           <article>
-            <h2 className="font-serif text-4xl text-green-deep">Monterías y eventos</h2>
+            <h2 className="font-serif text-4xl text-green-deep">Catering en tu empresa y eventos</h2>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              Catering para celebraciones y, en el campo, desayuno campero, almuerzo y comida de montería. La finca se confirma si está dentro de los 60 km.
+              Coffee break, tapas y un catering pequeño para la oficina o para el evento. En Ciudad Real, Puertollano y hasta 60 km.
             </p>
-            <Link href="/servicios/catering-monterias-eventos-caza" className="mt-4 inline-block font-semibold text-green-dark underline">
-              Catering para monterías
+            <Link href="/servicios/catering-empresa-y-eventos" className="mt-4 inline-block font-semibold text-green-dark underline">
+              Catering para empresas
             </Link>
           </article>
         </div>

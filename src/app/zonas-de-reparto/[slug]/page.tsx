@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!locality) return {};
   const title = `Comida a domicilio en ${locality.name}`.slice(0, 60);
   const description =
-    `Comida casera a domicilio en ${locality.name}, a ${nearestKm(locality)} km de ${nearestHub(locality)}. Menús y catering. Pide presupuesto.`.slice(0, 155);
+    `Comida casera a domicilio en ${locality.name}, a ${nearestKm(locality)} km de ${nearestHub(locality)}. Menús y catering.`.slice(0, 155);
   return pageMeta({
     title,
     description,
@@ -99,11 +99,6 @@ export default async function ZonePage({ params }: { params: Promise<{ slug: str
         <div className="mt-10">
           <CtaPair />
         </div>
-        <p className="mt-4 text-sm text-ink-soft">
-          <Link href={`/contacto?localidad=${encodeURIComponent(locality.name)}`} className="underline">
-            Pedir presupuesto para {locality.name}
-          </Link>
-        </p>
       </article>
     </>
   );

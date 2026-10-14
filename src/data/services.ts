@@ -25,7 +25,7 @@ export const services: Service[] = [
     card: "Colegios, guarderías, residencias y centros de mayores, con menús adaptados.",
     title: "Comida para colegios y residencias",
     description:
-      "Menús para colegios, guarderías, residencias y centros de mayores en Ciudad Real y Puertollano. Dietas adaptadas. Pide presupuesto.",
+      "Menús para colegios, guarderías, residencias y centros de mayores en Ciudad Real y Puertollano. Dietas adaptadas.",
     h1: "Comida para colegios, guarderías y residencias en Ciudad Real",
     lead: "Preparamos comida casera para colectividades en Ciudad Real, Puertollano y hasta 60 km: colegios, guarderías, residencias y centros de mayores. El menú se adapta a cada centro y el presupuesto se pide sin compromiso.",
     paragraphs: [
@@ -85,12 +85,12 @@ export const services: Service[] = [
     card: "Comida casera en casa, en Ciudad Real, Puertollano y alrededores.",
     title: "Comida casera a domicilio Ciudad Real",
     description:
-      "Comida casera a domicilio en Ciudad Real y Puertollano, hasta 60 km. Menús equilibrados sin precio en web. Pide presupuesto por WhatsApp.",
+      "Comida casera a domicilio en Ciudad Real y Puertollano, hasta 60 km. Menús equilibrados sin precio en web. Escríbenos por WhatsApp.",
     h1: "Comida casera a domicilio en Ciudad Real y Puertollano",
     lead: "Llevamos comida casera a tu puerta en Ciudad Real, Puertollano y localidades hasta 60 km de cualquiera de las dos. Tú eliges el tipo de menú, nosotros preparamos el presupuesto y repartimos. No hay carta con precios ni suscripción.",
     paragraphs: [
       "Este servicio es para casas particulares: una persona, una pareja o quien ese día come en casa y quiere sabor de casa sin organizarlo todo. El tono es cercano. Si lo que necesitas es un colegio, una residencia o una montería, hay servicios específicos; si dudas, cuéntanoslo y te orientamos.",
-      "Los menús son equilibrados y pueden adaptarse. Hay ejemplos de primeros, segundos y postres en la carta, marcados como pendientes de sustituir por los platos reales. La comida se elabora con ingredientes de primeras marcas y con tratamientos de conservación pensados para cuidar los nutrientes hasta el momento de consumirla.",
+      "Los menús son equilibrados y pueden adaptarse. Hay ejemplos de primeros y segundos en la carta. La comida se elabora con ingredientes de primeras marcas y con tratamientos de conservación pensados para cuidar los nutrientes hasta el momento de consumirla.",
       "No publicamos tiempos de entrega cerrados ni un mínimo de platos. Eso se confirma al pedir presupuesto, según la localidad y el día. Puedes escribir por WhatsApp, llamar al 675 601 543 o usar el formulario.",
     ],
     includes: [
@@ -243,8 +243,65 @@ export const services: Service[] = [
           "Las monterías, los desayunos camperos y las comidas de campo están en el servicio de catering para eventos de caza. Si tu evento es de ese tipo, entra por esa página para que la propuesta encaje con el ritmo del día.",
       },
     ],
-    related: ["catering-personalizado", "catering-monterias-eventos-caza"],
+    related: ["catering-empresa-y-eventos", "catering-personalizado", "catering-monterias-eventos-caza"],
     posts: ["catering-monteria"],
+  },
+  {
+    slug: "catering-empresa-y-eventos",
+    name: "Catering en tu empresa y eventos",
+    nav: "Empresa y eventos",
+    card: "Coffee break, tapas y catering pequeño para la oficina o el evento, en Ciudad Real y Puertollano.",
+    title: "Catering para empresas en Ciudad Real",
+    description:
+      "Coffee break, tapas y catering de oficina en Ciudad Real y Puertollano. Lo llevamos a la reunión o al evento. Presupuesto por WhatsApp.",
+    h1: "Catering para tu empresa y tus eventos en Ciudad Real",
+    lead: "Llevamos el coffee break, las tapas o un catering pequeño a la oficina, a la sala de reuniones y al evento. Comida casera en Ciudad Real, Puertollano y hasta 60 km. Nos dices la hora y las personas, y llegamos con la bandeja.",
+    paragraphs: [
+      "La pausa de una reunión, la presentación de mediodía o el equipo que come junto piden algo que se ponga en la mesa y se termine. El coffee break, unas tapas o un catering corto para la oficina es lo que más se busca ahora, y aquí sale de cocina casera.",
+      "En el coffee break llevamos bocados dulces y salados para la pausa. Las tapas son para compartir en la mesa del equipo, en un formato pequeño, pensado para una sala. Si el encargo es el evento de la empresa, una presentación, un aniversario o una jornada, preparamos el menú para esa hora y ese número de personas.",
+      "Repartimos en despachos del centro, en naves de polígono y en salas de Ciudad Real, de Puertollano y de las localidades que quedan hasta 60 km de cualquiera de las dos. Si la dirección está en el límite, lo confirmamos al pedir la información.",
+      "Para contratarlo basta un mensaje: empresa o tipo de evento, dirección, número de personas, hora y si es coffee break, tapas o comida. El presupuesto sale por escrito. En la web no hay tarifas ni un pedido que se renueve solo. WhatsApp y teléfono: 675 601 543.",
+    ],
+    includes: [
+      "Coffee break para reuniones y jornadas",
+      "Tapas para la oficina o el equipo",
+      "Catering pequeño en sala, despacho o evento de empresa",
+      "Reparto en Ciudad Real, Puertollano y hasta 60 km",
+      "Presupuesto por escrito antes de confirmar",
+    ],
+    steps: [
+      {
+        title: "La reunión",
+        text: "Día, hora, dirección de la oficina o del evento, número de personas y si es coffee break, tapas o comida.",
+      },
+      {
+        title: "La propuesta",
+        text: "Te enviamos el menú y el presupuesto. Se ajusta si cambia el aforo o la hora.",
+      },
+      {
+        title: "La entrega",
+        text: "Elaboramos y lo llevamos a la mesa acordada, dentro de la zona de reparto.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Hacéis coffee break para empresas en Ciudad Real?",
+        answer:
+          "Sí. Preparamos el coffee break de reuniones y jornadas en Ciudad Real, Puertollano y hasta 60 km: bocados dulces y salados para la pausa. Indica la dirección de la oficina, la hora y cuántas personas sois. El presupuesto se envía por escrito; en la web no hay tarifa.",
+      },
+      {
+        question: "¿Lleváis tapas o un catering pequeño a la oficina?",
+        answer:
+          "Sí. Llevamos tapas para compartir y un catering pequeño a la mesa de la oficina, el despacho o la sala. Sirve para un equipo, una visita o una comida de trabajo en Ciudad Real, Puertollano y el radio de 60 km. WhatsApp y teléfono: 675 601 543.",
+      },
+      {
+        question: "¿También cubrís el evento de la empresa?",
+        answer:
+          "Sí. Presentaciones, aniversarios de empresa y jornadas entran en este servicio. Una celebración familiar más amplia puede verse también en la página de eventos. Una montería tiene su propia página. En todos los casos el presupuesto es previo.",
+      },
+    ],
+    related: ["eventos", "catering-personalizado", "comida-a-domicilio"],
+    posts: [],
   },
   {
     slug: "catering-monterias-eventos-caza",
@@ -258,7 +315,7 @@ export const services: Service[] = [
     lead: "Hacemos catering gastronómico para monterías y eventos cinegéticos en la zona de Ciudad Real y Puertollano: desayuno campero, almuerzo y comida. El presupuesto depende de la finca, la fecha y los comensales.",
     paragraphs: [
       "Una montería no se sirve como un cóctel en un salón. Hay madrugón, gente que entra y sale del campo, y una comida que tiene que estar cuando el grupo vuelve. El servicio contempla esas tres piezas: desayuno campero, almuerzo y comida.",
-      "La propuesta se habla con quien organiza: número aproximado de cazadores y acompañantes, finca o punto de encuentro, y si hace falta alguna adaptación. No inventamos un menú único de caza en esta web. En la carta hay ejemplos de cocina de campo, marcados para sustituir por los platos que realmente elaboréis con nosotros.",
+      "La propuesta se habla con quien organiza: número aproximado de cazadores y acompañantes, finca o punto de encuentro, y si hace falta alguna adaptación. El menú de campo no está cerrado en la carta: se propone al pedir la información.",
       "La zona es la misma del resto de servicios: Ciudad Real, Puertollano y hasta 60 km. Muchas fincas del Valle de Alcudia, del Campo de Calatrava o del entorno de Despeñaperros entran en ese radio; si la tuya está justo en el límite, lo confirmamos al presupuestar. El acceso por camino se tiene en cuenta en esa confirmación.",
     ],
     includes: [

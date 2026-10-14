@@ -9,7 +9,7 @@ import { breadcrumbSchema, graph, localBusinessSchema } from "@/lib/schema";
 export const metadata = pageMeta({
   title: "Zonas de reparto en Ciudad Real",
   description:
-    "Reparto de comida casera en Ciudad Real, Puertollano y hasta 60 km. Consulta si tu localidad entra y pide presupuesto.",
+    "Reparto de comida casera en Ciudad Real, Puertollano y hasta 60 km. Consulta si tu localidad entra.",
   path: "/zonas-de-reparto",
 });
 
