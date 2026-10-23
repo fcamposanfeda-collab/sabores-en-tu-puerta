@@ -46,17 +46,20 @@ function PedirAhora({ className = "", current = false }: { className?: string; c
 
 export function Header() {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
+  // El menú se guarda abierto para una ruta concreta: al navegar deja de coincidir y se cierra solo.
+  const [openOn, setOpenOn] = useState<string | null>(null);
+  const open = openOn === pathname;
+  const setOpen = (value: boolean | ((current: boolean) => boolean)) =>
+    setOpenOn((current) => {
+      const next = typeof value === "function" ? value(current === pathname) : value;
+      return next ? pathname : null;
+    });
   const home = pathname === "/";
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
 
   useEffect(() => {
     if (!open) return;
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") setOpenOn(null);
     };
     document.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
