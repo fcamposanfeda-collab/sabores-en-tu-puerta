@@ -1,22 +1,36 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 
 const key = "sep-consent";
 
+function subscribe(onChange: () => void) {
+  window.addEventListener("sep-consent", onChange);
+  window.addEventListener("storage", onChange);
+  return () => {
+    window.removeEventListener("sep-consent", onChange);
+    window.removeEventListener("storage", onChange);
+  };
+}
+
+// En el servidor se da por hecha la elección para no pintar el banner en el HTML estático.
+const hasChoice = () => window.localStorage.getItem(key) !== null;
+const hasChoiceOnServer = () => true;
+
 export function CookieBanner() {
-  const [visible, setVisible] = useState(false);
+  const chosen = useSyncExternalStore(subscribe, hasChoice, hasChoiceOnServer);
+  const [reopened, setReopened] = useState(false);
+  const visible = reopened || !chosen;
 
   useEffect(() => {
-    if (!window.localStorage.getItem(key)) setVisible(true);
-    const open = () => setVisible(true);
+    const open = () => setReopened(true);
     window.addEventListener("sep-open-cookies", open);
     return () => window.removeEventListener("sep-open-cookies", open);
   }, []);
 
   function choose(value: "accepted" | "rejected") {
     window.localStorage.setItem(key, value);
-    setVisible(false);
+    setReopened(false);
     window.dispatchEvent(new Event("sep-consent"));
   }
 
