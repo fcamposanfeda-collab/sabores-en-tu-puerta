@@ -16,7 +16,7 @@ export default function ThanksPage() {
       <p className="text-xs font-semibold uppercase tracking-[0.16em] text-leaf">Contacto</p>
       <h1 className="mt-3 font-serif text-5xl text-green-deep">Ya tenemos tu solicitud</h1>
       <p className="mt-4 text-lg leading-relaxed text-ink-soft">
-        Gracias por escribir. Revisaremos el servicio, la localidad y los comensales, y te responderemos por teléfono o por email. Si es urgente, llama o escribe por WhatsApp.
+        Gracias por escribir. Revisaremos el servicio y la localidad, y te responderemos por teléfono o por email. Si es urgente, llama o escribe por WhatsApp.
       </p>
       <div className="mt-8">
         <CtaPair />

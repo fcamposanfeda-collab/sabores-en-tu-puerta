@@ -22,7 +22,7 @@ export default function LegalNoticePage() {
         <li>Teléfono: {site.phoneDisplay}</li>
       </ul>
       <p>
-        Los textos describen servicios de comida casera, colectividades y catering en la zona indicada. No constituyen una oferta con precio. El presupuesto se envía de forma individual.
+        Los textos describen servicios de comida casera, colectividades y catering en la zona indicada. El presupuesto se envía de forma individual.
       </p>
       <p>
         Los contenidos de esta web (textos, logotipo recreado y estructura) pertenecen a su titular. TODO: sustituir el emblema por el archivo SVG oficial si se dispone de él.

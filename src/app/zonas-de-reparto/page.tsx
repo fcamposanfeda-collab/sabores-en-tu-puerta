@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { CallButton, WhatsappButton } from "@/components/Buttons";
 import { PageHero } from "@/components/PageHero";
 import { JsonLd } from "@/components/JsonLd";
-import { enabledLocalities, localities, nearestHub, nearestKm } from "@/data/localities";
+import { enabledLocalities, nearestHub, nearestKm } from "@/data/localities";
 import { site } from "@/data/site";
 import { pageMeta } from "@/lib/seo";
 import { breadcrumbSchema, graph, localBusinessSchema } from "@/lib/schema";
@@ -18,7 +19,6 @@ export default function ZonasPage() {
     { name: "Inicio", path: "/" },
     { name: "Zonas de reparto", path: "/zonas-de-reparto" },
   ];
-  const excluded = localities.filter((locality) => !locality.enabled);
 
   return (
     <>
@@ -31,13 +31,11 @@ export default function ZonasPage() {
       />
       <div className="mx-auto max-w-6xl px-5 py-12">
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[40rem] border-collapse text-left text-sm">
+          <table className="w-full border-collapse text-left text-sm">
             <caption className="sr-only">Localidades dentro del radio de reparto</caption>
             <thead>
               <tr className="border-b border-line text-ink">
                 <th className="py-3 pr-4 font-semibold">Localidad</th>
-                <th className="py-3 pr-4 font-semibold">Desde Ciudad Real</th>
-                <th className="py-3 pr-4 font-semibold">Desde Puertollano</th>
                 <th className="py-3 font-semibold">Centro más cercano</th>
               </tr>
             </thead>
@@ -50,26 +48,32 @@ export default function ZonasPage() {
                     </Link>
                     {locality.edge ? <span className="ml-2 text-xs text-ink-soft">límite</span> : null}
                   </td>
-                  <td className="py-3 pr-4">{locality.kmFromCiudadReal} km</td>
-                  <td className="py-3 pr-4">{locality.kmFromPuertollano} km</td>
                   <td className="py-3">{nearestHub(locality)} ({nearestKm(locality)} km)</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <h2 className="mt-12 font-serif text-3xl text-green-deep">Revisadas y fuera del radio</h2>
-        <p className="mt-3 max-w-3xl text-ink-soft">
-          Estas localidades se miraron y quedan a más de 60 km de los dos centros. No tienen página propia porque no forman parte del servicio. Si quieres ampliar la zona, cambia `enabled` en el archivo de localidades.
-        </p>
-        <ul className="mt-4 space-y-2 text-sm text-ink-soft">
-          {excluded.map((locality) => (
-            <li key={locality.slug}>
-              <strong className="font-medium text-ink">{locality.name}.</strong> {locality.exclusionReason}
-            </li>
-          ))}
-        </ul>
       </div>
+      <section className="border-t border-line bg-paper" aria-labelledby="consulta-zona">
+        <div className="mx-auto max-w-6xl px-5 py-16">
+          <h2 id="consulta-zona" className="font-serif text-4xl text-green-deep">
+            ¿No aparece tu localidad?
+          </h2>
+          <p className="mt-3 max-w-2xl leading-relaxed text-ink-soft">
+            Si no la ves en la lista, consúltanos. Te decimos si entra en el reparto de Ciudad Real o de Puertollano.
+          </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <CallButton />
+            <WhatsappButton message="Hola, mi localidad no sale en la lista de zonas. ¿Podéis decirme si repartís allí?">
+              WhatsApp
+            </WhatsappButton>
+          </div>
+          <Link href="/contacto" className="mt-4 inline-block text-sm font-semibold text-green-dark underline">
+            O escríbenos por el formulario
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

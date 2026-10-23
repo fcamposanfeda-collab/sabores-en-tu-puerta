@@ -117,12 +117,12 @@ export default function HomePage() {
             {[
               {
                 title: "Nos cuentas el encargo",
-                text: "Servicio, localidad, comensales y fecha si ya la tienes.",
+                text: "Servicio y localidad. El resto, si quieres, en el mensaje.",
                 icon: ChatIcon,
               },
               {
                 title: "Preparamos la propuesta",
-                text: "Menú y presupuesto por escrito. Nada de precios genéricos.",
+                text: "Menú y presupuesto por escrito.",
                 icon: ProposalIcon,
               },
               {
@@ -263,13 +263,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="testimonios-title">
-        <h2 id="testimonios-title" className="font-serif text-4xl text-green-deep">Quienes ya comen con nosotros</h2>
-        <p className="mt-3 max-w-2xl text-ink-soft">
-          TODO: añadir testimonios reales, con nombre y permiso, y los logos de centros o fincas que autoricen publicarse. No hay reseñas inventadas.
-        </p>
-      </section>
-
       <section className="mx-auto max-w-6xl px-5 pb-8" aria-labelledby="faq-title">
         <h2 id="faq-title" className="font-serif text-4xl text-green-deep">Preguntas frecuentes</h2>
         <div className="mt-6">
@@ -285,7 +278,7 @@ export default function HomePage() {
           <div>
             <h2 className="font-serif text-4xl text-green-deep">Pregunta sin compromiso</h2>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              Cuéntanos el servicio, la localidad y para cuántas personas. Te respondemos con una propuesta.
+              Cuéntanos el servicio y la localidad. Te respondemos con una propuesta.
               <span className="mt-1 block">
                 Si lo prefieres, llama al {site.phoneDisplay} o escribe por WhatsApp.
               </span>

@@ -32,7 +32,7 @@ export const services: Service[] = [
       "Un comedor de centro no funciona como una casa. Hay volumen, horarios, alérgenos que declarar y personas con necesidades distintas en la misma mesa. Por eso el servicio de colectividades se plantea con el equipo del centro: dirección, cocina de apoyo si la hay, y las familias cuando corresponde.",
       "Trabajamos menús equilibrados y dietas adaptadas. En residencias y centros de mayores tiene especial peso la adaptación de elaboraciones y texturas. En colegios y guarderías, la variedad a lo largo de la semana y la información de alérgenos. No prometemos resultados de salud: organizamos la comida para que encaje con lo que el centro necesita.",
       "Los ingredientes son de primeras marcas y la conservación busca mantener los nutrientes desde la elaboración hasta el consumo. El detalle del formato de entrega se concreta en el presupuesto, porque no es igual un colegio que una residencia.",
-      "El trato en colectividades es profesional y por escrito: propuesta de menú, localidad, número aproximado de comensales y calendario. No hay precios cerrados en esta web.",
+      "El trato en colectividades es profesional y por escrito: propuesta de menú, localidad, número aproximado de comensales y calendario.",
     ],
     includes: [
       "Propuesta de menús para el centro, no una carta genérica de restaurante",
@@ -59,7 +59,7 @@ export const services: Service[] = [
       {
         question: "¿Hacéis comida para colegios y guarderías en Ciudad Real?",
         answer:
-          "Sí. El servicio de colectividades incluye colegios y guarderías en Ciudad Real, Puertollano y localidades del radio de 60 km. La propuesta se arma con el centro: menús, alérgenos y calendario. El precio no está publicado; se envía un presupuesto.",
+          "Sí. El servicio de colectividades incluye colegios y guarderías en Ciudad Real, Puertollano y localidades del radio de 60 km. La propuesta se arma con el centro: menús, alérgenos y calendario. Se envía un presupuesto.",
       },
       {
         question: "¿Cómo se adaptan los menús a personas mayores?",
@@ -85,8 +85,8 @@ export const services: Service[] = [
     card: "Comida casera en casa, en Ciudad Real, Puertollano y alrededores.",
     title: "Comida casera a domicilio Ciudad Real",
     description:
-      "Comida casera a domicilio en Ciudad Real y Puertollano, hasta 60 km. Menús equilibrados sin precio en web. Escríbenos por WhatsApp.",
-    h1: "Comida casera a domicilio en Ciudad Real y Puertollano",
+      "Comida casera a domicilio en Ciudad Real. Menús equilibrados. Escríbenos por WhatsApp.",
+    h1: "Comida casera a domicilio en Ciudad Real y alrededores",
     lead: "Llevamos comida casera a tu puerta en Ciudad Real, Puertollano y localidades hasta 60 km de cualquiera de las dos. Tú eliges el tipo de menú, nosotros preparamos el presupuesto y repartimos.",
     paragraphs: [
       "Este servicio es para casas particulares: una persona, una pareja o quien ese día come en casa y quiere sabor de casa sin organizarlo todo. El tono es cercano. Si lo que necesitas es un colegio, una residencia o una montería, hay servicios específicos; si dudas, cuéntanoslo y te orientamos.",
@@ -123,7 +123,7 @@ export const services: Service[] = [
       {
         question: "¿Puedo pedir solo para mí?",
         answer:
-          "Puedes consultar un encargo particular, sea para una persona o para varias. Indica el número aproximado de comensales en el formulario o por WhatsApp y te decimos si encaja en la ruta de tu localidad.",
+          "Puedes consultar un encargo particular, sea para una persona o para varias. Cuéntanoslo en el mensaje o por WhatsApp y te decimos si encaja en la ruta de tu localidad.",
       },
     ],
     related: ["colectividades", "catering-personalizado"],
@@ -136,14 +136,14 @@ export const services: Service[] = [
     card: "Menú a medida para una celebración, un evento o una comida en casa.",
     title: "Catering personalizado para eventos en Ciudad Real",
     description:
-      "Catering personalizado para celebraciones y eventos en Ciudad Real y Puertollano. Menú a medida y presupuesto, sin precios en la web.",
+      "Catering personalizado para celebraciones y eventos en Ciudad Real y Puertollano. Menú a medida y presupuesto.",
     h1: "Catering personalizado para eventos en Ciudad Real y Puertollano",
     lead: "Preparamos un menú a medida para tu celebración o tu evento en Ciudad Real, Puertollano y hasta 60 km. Puede ser en casa o en el espacio que elijas. Nos dices la ocasión, el lugar y los comensales, y el presupuesto sale para esa fecha.",
     paragraphs: [
       "El punto de partida es el encargo: cuántas personas, qué ocasión, si hay alguna dieta o alérgeno y qué tipo de comida te imaginas. A partir de eso proponemos un menú casero, no una plantilla idéntica para todo el mundo.",
       "Un evento pide más coordinación que un pedido de casa. Hace falta la hora de servicio, el acceso al espacio, el número de personas y un menú que se entienda de un vistazo. Por eso pedimos esos datos al principio, antes de hablar de importe. Cubrimos celebraciones familiares, bautizos, comidas de grupo y encuentros que necesitan un menú cuidado.",
       "La comida sigue siendo casera, con ingredientes de primeras marcas y la misma lógica de conservación. Las monterías y los eventos de caza tienen su propia página, porque el ritmo del campo no es el de una celebración. El coffee break y las tapas de oficina están en el catering de empresa.",
-      "No hay paquetes con precio publicado. Cada encargo se presupuesta. Si la fecha todavía es orientativa, puedes escribir igual: con la localidad y un número aproximado de comensales basta para empezar. Lo que no quede escrito en el presupuesto, no lo damos por hecho.",
+      "Cada encargo se presupuesta. Si la fecha todavía es orientativa, puedes escribir igual: con la localidad y un número aproximado de comensales basta para empezar. Lo que no quede escrito en el presupuesto, no lo damos por hecho.",
     ],
     includes: [
       "Menú de celebración o encuentro, propuesto para esa fecha y esas personas",
@@ -170,7 +170,7 @@ export const services: Service[] = [
       {
         question: "¿Hacéis catering para eventos en Puertollano?",
         answer:
-          "Sí. Puertollano entra en la zona, igual que Ciudad Real y las localidades del radio de 60 km. Para un evento pedimos lugar, fecha orientativa y número de comensales, y devolvemos un presupuesto. No hay tarifa publicada.",
+          "Sí. Puertollano entra en la zona, igual que Ciudad Real y las localidades del radio de 60 km. Para un evento pedimos lugar, fecha orientativa y número de comensales, y devolvemos un presupuesto.",
       },
       {
         question: "¿Sirve también para una comida en casa?",
@@ -210,7 +210,7 @@ export const services: Service[] = [
       "La pausa de una reunión, la presentación de mediodía o el equipo que come junto piden algo que se ponga en la mesa y se termine. El coffee break, unas tapas o un catering corto para la oficina es lo que más se busca ahora, y aquí sale de cocina casera.",
       "En el coffee break llevamos bocados dulces y salados para la pausa. Las tapas son para compartir en la mesa del equipo, en un formato pequeño, pensado para una sala. Si el encargo es el evento de la empresa, una presentación, un aniversario o una jornada, preparamos el menú para esa hora y ese número de personas.",
       "Repartimos en despachos del centro, en naves de polígono y en salas de Ciudad Real, de Puertollano y de las localidades que quedan hasta 60 km de cualquiera de las dos. Si la dirección está en el límite, lo confirmamos al pedir la información.",
-      "Para contratarlo basta un mensaje: empresa o tipo de evento, dirección, número de personas, hora y si es coffee break, tapas o comida. El presupuesto sale por escrito. En la web no hay tarifas ni un pedido que se renueve solo. WhatsApp y teléfono: 675 601 543.",
+      "Para contratarlo basta un mensaje: empresa o tipo de evento, dirección, número de personas, hora y si es coffee break, tapas o comida. El presupuesto sale por escrito. No es un pedido que se renueve solo. WhatsApp y teléfono: 675 601 543.",
     ],
     includes: [
       "Coffee break para reuniones y jornadas",
@@ -237,7 +237,7 @@ export const services: Service[] = [
       {
         question: "¿Hacéis coffee break para empresas en Ciudad Real?",
         answer:
-          "Sí. Preparamos el coffee break de reuniones y jornadas en Ciudad Real, Puertollano y hasta 60 km: bocados dulces y salados para la pausa. Indica la dirección de la oficina, la hora y cuántas personas sois. El presupuesto se envía por escrito; en la web no hay tarifa.",
+          "Sí. Preparamos el coffee break de reuniones y jornadas en Ciudad Real, Puertollano y hasta 60 km: bocados dulces y salados para la pausa. Indica la dirección de la oficina, la hora y cuántas personas sois. El presupuesto se envía por escrito.",
       },
       {
         question: "¿Lleváis tapas o un catering pequeño a la oficina?",
@@ -293,7 +293,7 @@ export const services: Service[] = [
       {
         question: "¿Hacéis catering para monterías?",
         answer:
-          "Sí. El servicio de caza incluye desayuno campero, almuerzo y comida para monterías y otros eventos cinegéticos en Ciudad Real, Puertollano y hasta 60 km. Se pide presupuesto con la fecha, la finca y los comensales. No hay precio publicado.",
+          "Sí. El servicio de caza incluye desayuno campero, almuerzo y comida para monterías y otros eventos cinegéticos en Ciudad Real, Puertollano y hasta 60 km. Se pide presupuesto con la fecha, la finca y los comensales.",
       },
       {
         question: "¿Llegáis a una finca que no está en el pueblo?",

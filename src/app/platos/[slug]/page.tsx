@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const title = `${dish.name}: comida casera`.slice(0, 60);
   return pageMeta({
     title,
-    description: `${dish.description} Ejemplo de carta, sin precio, en Ciudad Real o Puertollano.`.slice(0, 155),
+    description: `${dish.description} Ejemplo de carta en Ciudad Real o Puertollano.`.slice(0, 155),
     path: `/platos/${dish.slug}`,
   });
 }

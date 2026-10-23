@@ -24,7 +24,7 @@ export default function FaqPage() {
         crumbs={crumbs}
         eyebrow="Ayuda"
         title="Preguntas frecuentes sobre el reparto y los menús"
-        lead="Respuestas cortas a lo que más se pregunta: dónde llegamos, cómo se adaptan los menús, si hay precios y cómo se pide un presupuesto."
+        lead="Respuestas cortas a lo que más se pregunta: dónde llegamos, cómo se adaptan los menús y cómo se pide un presupuesto."
       />
       <div className="mx-auto max-w-3xl px-5 py-12">
         <FaqList items={faqs} />

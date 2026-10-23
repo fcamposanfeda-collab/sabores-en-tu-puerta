@@ -37,7 +37,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const { nombre, telefono, email, servicio, localidad, comensales, fecha, mensaje } = parsed.data;
+  const { nombre, telefono, email, servicio, localidad, mensaje } = parsed.data;
   const text = [
     "Nueva solicitud de presupuesto desde la web",
     "",
@@ -46,8 +46,6 @@ export async function POST(request: Request) {
     `Email: ${email}`,
     `Servicio: ${servicio}`,
     `Localidad: ${localidad}`,
-    `Comensales: ${comensales}`,
-    `Fecha: ${fecha || "No indicada"}`,
     "",
     mensaje,
   ].join("\n");

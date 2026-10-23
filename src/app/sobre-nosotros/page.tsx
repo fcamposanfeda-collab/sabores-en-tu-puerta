@@ -47,7 +47,7 @@ export default function AboutPage() {
           <li>Conservación orientada a cuidar los nutrientes.</li>
           <li>Menús equilibrados y adaptados cuando nos lo pedís.</li>
           <li>Controles de higiene en la elaboración. TODO: publicar el registro sanitario si se quiere mostrar.</li>
-          <li>Presupuesto claro antes de confirmar, sin precios genéricos.</li>
+          <li>Presupuesto claro antes de confirmar.</li>
           <li>Zona declarada: Provincia de Ciudad Real.</li>
         </ul>
         <p>

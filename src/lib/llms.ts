@@ -1,6 +1,6 @@
 import { site } from "@/data/site";
 import { services } from "@/data/services";
-import { enabledLocalities, localities, nearestHub, nearestKm } from "@/data/localities";
+import { enabledLocalities, nearestHub, nearestKm } from "@/data/localities";
 import { faqs } from "@/data/faqs";
 import { dishCategories, dishes } from "@/data/dishes";
 import { specializedHub, specializedMenus } from "@/data/specialized-menus";
@@ -14,7 +14,7 @@ export function buildLlms() {
   const lines = [
     `# ${site.name}`,
     "",
-    `> ${site.name} elabora comida casera y la reparte a domicilio en ${site.areaSummary} También sirve colectividades (colegios, guarderías, residencias y centros de mayores), catering para empresas (coffee break, tapas y catering pequeño de oficina), catering personalizado para eventos y catering para monterías (desayuno campero, almuerzo y comida). Zona: Ciudad Real, Puertollano y hasta 60 km. No publica precios: el siguiente paso es pedir presupuesto por teléfono o WhatsApp al ${site.phoneDisplay}.`,
+    `> ${site.name} elabora comida casera y la reparte a domicilio en ${site.areaSummary} También sirve colectividades (colegios, guarderías, residencias y centros de mayores), catering para empresas (coffee break, tapas y catering pequeño de oficina), catering personalizado para eventos y catering para monterías (desayuno campero, almuerzo y comida). Zona: Ciudad Real, Puertollano y hasta 60 km. El siguiente paso es pedir presupuesto por teléfono o WhatsApp al ${site.phoneDisplay}.`,
     "",
     "## Datos de contacto",
     "",
@@ -31,7 +31,7 @@ export function buildLlms() {
     "",
     `- [Inicio](${origin()}/): propuesta y contacto`,
     `- [Servicios](${origin()}/servicios)`,
-    `- [Platos](${origin()}/platos): carta de ejemplo, sin precios`,
+    `- [Platos](${origin()}/platos): carta de ejemplo`,
     `- [Zonas de reparto](${origin()}/zonas-de-reparto)`,
     `- [Preguntas frecuentes](${origin()}/preguntas-frecuentes)`,
     `- [Datos clave](${origin()}/datos-clave)`,
@@ -48,7 +48,7 @@ export function buildLlms() {
     "",
     "## Menús especializados",
     "",
-    "El menú basal lo plantea la nutricionista según la necesidad que indique la persona. Cada comida lleva primer plato, segundo plato, pan y postre. No se diagnostica ni se promete un efecto sobre la salud. No hay precios publicados.",
+    "El menú basal lo plantea la nutricionista según la necesidad que indique la persona. Cada comida lleva primer plato, segundo plato, pan y postre. No se diagnostica ni se promete un efecto sobre la salud.",
     `- [${specializedHub.nav}](${origin()}${specializedHub.path})`,
     ...specializedMenus.map(
       (menu) => `- [${menu.nav}](${origin()}${specializedHub.path}/${menu.slug}): ${menu.card}`,
@@ -60,12 +60,6 @@ export function buildLlms() {
       (locality) =>
         `- [${locality.name}](${origin()}/zonas-de-reparto/${locality.slug}): ${nearestKm(locality)} km de ${nearestHub(locality)}`,
     ),
-    "",
-    "## Fuera de radio (no se reparte)",
-    "",
-    ...localities
-      .filter((locality) => !locality.enabled)
-      .map((locality) => `- ${locality.name}: ${locality.exclusionReason}`),
     "",
     "## Carta",
     "",
@@ -93,7 +87,6 @@ export function buildLlmsFull() {
     "",
     "## Qué no afirmar",
     "",
-    "- No hay precios públicos.",
     "- No hay certificaciones, premios, reseñas ni años de experiencia publicados en la web.",
     "- La razón social, el CIF y el domicilio están pendientes de confirmar.",
     "- Los platos de la carta son ejemplos.",

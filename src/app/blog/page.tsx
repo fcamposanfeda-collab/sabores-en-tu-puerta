@@ -8,7 +8,7 @@ import { breadcrumbSchema, graph } from "@/lib/schema";
 export const metadata = pageMeta({
   title: "Blog de comida casera y colectividades",
   description:
-    "Guías para elegir comida de residencias, catering de monterías y menús de colegios. Sin promesas de salud ni precios.",
+    "Guías para elegir comida de residencias, catering de monterías y menús de colegios. Sin promesas de salud.",
   path: "/blog",
 });
 
