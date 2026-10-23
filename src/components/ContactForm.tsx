@@ -46,16 +46,41 @@ export function ContactForm() {
     }
     setErrors({});
     setStatus("sending");
+    if (parsed.data.company) {
+      router.push("/contacto/gracias");
+      return;
+    }
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+    if (!accessKey) {
+      setStatus("error");
+      setFormError(
+        "El envío por email todavía no está configurado. Llámanos o escríbenos por WhatsApp y te atendemos igual.",
+      );
+      return;
+    }
+    const { nombre, telefono, email, servicio, localidad, comensales, fecha, mensaje } = parsed.data;
     try {
-      const response = await fetch("/api/contacto", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(parsed.data),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `Presupuesto: ${servicio} en ${localidad}`,
+          from_name: "Web Sabores en tu Puerta",
+          replyto: email,
+          Nombre: nombre,
+          Teléfono: telefono,
+          Email: email,
+          Servicio: servicio,
+          Localidad: localidad,
+          Comensales: comensales,
+          Fecha: fecha || "No indicada",
+          Mensaje: mensaje,
+        }),
       });
-      const payload = (await response.json()) as { ok?: boolean; message?: string };
-      if (!response.ok || !payload.ok) {
+      if (!response.ok) {
         setStatus("error");
-        setFormError(payload.message ?? "No se ha podido enviar. Prueba por teléfono o WhatsApp.");
+        setFormError("No se ha podido enviar. Prueba por teléfono o WhatsApp.");
         return;
       }
       track("generate_lead", { servicio: parsed.data.servicio });

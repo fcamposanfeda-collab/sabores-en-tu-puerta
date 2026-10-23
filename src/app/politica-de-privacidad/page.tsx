@@ -28,7 +28,7 @@ export default function PrivacyPage() {
       </p>
       <h2>Destinatarios</h2>
       <p>
-        El correo del formulario se envía mediante el proveedor de email configurado (Resend), que actúa como encargado cuando el servicio está activo. TODO: firmar el contrato de encargado e indicar la ubicación del tratamiento.
+        Los datos del formulario se envían por correo electrónico mediante el servicio Web3Forms, que actúa como encargado del tratamiento. TODO: firmar el contrato de encargado e indicar la ubicación del tratamiento.
       </p>
       <h2>Derechos</h2>
       <p>

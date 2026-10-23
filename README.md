@@ -1,6 +1,6 @@
 # Sabores en tu Puerta
 
-Web corporativa de comida casera y reparto a domicilio en Ciudad Real y alrededores. Hecha con Next.js (App Router), TypeScript y Tailwind CSS. Pensada para Vercel.
+Web corporativa de comida casera y reparto a domicilio en Ciudad Real y alrededores. Hecha con Next.js (App Router), TypeScript y Tailwind CSS. Se exporta como web estática (HTML) y se sube a cualquier hosting.
 
 No hay precios. Los botones piden presupuesto, llamada o WhatsApp.
 
@@ -14,12 +14,13 @@ npm run dev
 
 Abre http://localhost:3000.
 
-Para comprobar la build de producción:
+Para generar la web de producción:
 
 ```bash
 npm run build
-npm start
 ```
+
+El resultado queda en la carpeta `out/`. Para verla en local: `npx serve out`.
 
 ## Variables de entorno
 
@@ -30,11 +31,11 @@ Copia `.env.example`.
 | `NEXT_PUBLIC_SITE_URL` | Dominio canónico, sin barra final. Sale en canonical, sitemap, Open Graph y datos estructurados. |
 | `NEXT_PUBLIC_GA_ID` | ID de Google Analytics 4. Vacío = no se carga ningún script. |
 | `NEXT_PUBLIC_GSC_VERIFICATION` | Valor `content` de la meta de Search Console. |
-| `RESEND_API_KEY` | API key de Resend. |
-| `CONTACT_FROM_EMAIL` | Remitente verificado en Resend. No puede ser el Gmail personal si el dominio no está verificado. |
-| `CONTACT_TO_EMAIL` | Bandeja que recibe los presupuestos. Por defecto `Saboresentupuerta1@gmail.com`. |
+| `NEXT_PUBLIC_WEB3FORMS_KEY` | Clave de Web3Forms para el formulario. Se crea gratis en web3forms.com con el email que debe recibir los presupuestos. Es pública por diseño. |
 
-Sin `RESEND_API_KEY` y `CONTACT_FROM_EMAIL`, el formulario responde que el correo no está configurado y la persona puede llamar o escribir por WhatsApp.
+Sin `NEXT_PUBLIC_WEB3FORMS_KEY`, el formulario responde que el correo no está configurado y la persona puede llamar o escribir por WhatsApp.
+
+Las variables se leen al hacer `npm run build`: si cambias alguna, vuelve a generar y subir la web.
 
 ## Dónde se edita el contenido
 
@@ -80,14 +81,16 @@ Primer párrafo que responde la pregunta.
 
 Enlaces internos con rutas del sitio, por ejemplo `[contacto](/contacto)`.
 
-## Despliegue en Vercel
+## Publicación en el hosting
 
-1. Sube el repositorio y crea el proyecto en Vercel con el directorio raíz de esta carpeta.
-2. Framework: Next.js. No hace falta comando de build distinto.
-3. Añade las variables de entorno de producción.
-4. En Resend, verifica el dominio del `CONTACT_FROM_EMAIL`.
-5. Cuando tengas el dominio real, ponlo en `NEXT_PUBLIC_SITE_URL`.
+1. Crea `.env.local` con los valores de producción (dominio, GA4, Search Console y Web3Forms).
+2. `npm run build`.
+3. Sube **el contenido** de `out/` (no la carpeta) a la raíz pública del hosting (`public_html` o similar) por FTP o el gestor de archivos.
+4. Activa el certificado SSL gratuito (Let's Encrypt) en el panel del hosting.
+5. `out/.htaccess` ya trae HTTPS forzado, quitar `www`, página 404, la redirección de `/servicios/eventos`, caché y cabeceras básicas. Funciona en hostings Apache o LiteSpeed. En Nginx habría que trasladar esas reglas a la configuración del servidor.
 6. En Search Console, verifica con la meta tag y envía `https://tu-dominio/sitemap.xml`.
+
+Cada cambio de contenido requiere repetir los pasos 2 y 3.
 
 ## Analítica
 
