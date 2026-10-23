@@ -1,21 +1,13 @@
 import type { NextConfig } from "next";
 
+// Exportación estática: `npm run build` genera la carpeta `out/`, que se sube tal cual
+// a cualquier hosting. La redirección de /servicios/eventos está en public/.htaccess.
 const nextConfig: NextConfig = {
-  /* config options here */
-  async redirects() {
-    return [
-      {
-        source: "/servicios/eventos",
-        destination: "/servicios/catering-personalizado",
-        permanent: true,
-      },
-    ];
-  },
+  output: "export",
+  trailingSlash: true,
   images: {
-    qualities: [75, 90],
+    unoptimized: true,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
   turbopack: {
     rules: {
       "*.css": {
