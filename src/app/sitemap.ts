@@ -6,6 +6,8 @@ import { services } from "@/data/services";
 import { specializedHub, specializedMenus } from "@/data/specialized-menus";
 import { site } from "@/data/site";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const origin = site.url.replace(/\/$/, "");
   const staticPaths = [
@@ -32,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getPosts().map((post) => `/blog/${post.slug}`),
   ];
   return paths.map((path) => ({
-    url: `${origin}${path}`,
+    url: `${origin}${path}/`,
     changeFrequency: "monthly",
     priority: path === "" ? 1 : 0.7,
   }));
