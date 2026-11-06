@@ -1,0 +1,33 @@
+User-Agent: *
+Allow: /
+Disallow: /contacto/gracias/
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: Claude-SearchBot
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: Applebot-Extended
+Allow: /
+
+User-Agent: Amazonbot
+Allow: /
+
+Host: https://saboresentupuerta.com
+Sitemap: https://saboresentupuerta.com/sitemap.xml
