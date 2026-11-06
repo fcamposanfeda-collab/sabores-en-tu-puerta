@@ -13,9 +13,8 @@ export const site = {
   instagramHandle: "@saboresentupuerta1",
   /** Enlace compartido de la ficha de Google. TODO: sustituir por la URL canónica de Google Maps cuando se confirme. */
   googleBusinessUrl: "https://share.google/vM7KDvmDlz0zzlWbQ",
-  /** TODO: CIF. No publicar datos de registros sin confirmarlos. */
   legalName: "Sabores en tu Puerta, S.L.",
-  cif: "TODO: CIF",
+  cif: "B21780341",
   address: {
     streetAddress: "Ctra. de Toledo, 26, Edificio Cumbria, oficina 304",
     postalCode: "13005",

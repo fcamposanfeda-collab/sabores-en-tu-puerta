@@ -17,6 +17,7 @@ export function organizationSchema() {
     "@id": organizationId(),
     name: site.name,
     legalName: site.legalName,
+    taxID: site.cif,
     url: origin(),
     email: site.email,
     telephone: site.phoneTel,
