@@ -107,7 +107,7 @@ export default function HomePage() {
             Comida casera a domicilio, con menús adaptados a cada persona
           </h1>
           <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-ink sm:text-base">
-            Cocinamos nosotros, con el respaldo de un nutricionista. Tú nos dices para quién es y te lo llevamos a la puerta en Ciudad Real, Puertollano y alrededores.
+            Cocinamos nosotros, con el respaldo de un nutricionista. Tú nos dices para quién es y te lo llevamos a la puerta.
           </p>
           <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
