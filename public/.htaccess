@@ -1,5 +1,5 @@
 # Configuración para hosting Apache (la mayoría de hostings compartidos en España).
-# Se copia sola a out/ al hacer `npm run build`. Sube el contenido de out/ a la raíz pública (public_html).
+# Solo se usa si algún día la web se aloja en un hosting Apache. En GitHub Pages se ignora.
 
 Options -Indexes
 DirectoryIndex index.html
