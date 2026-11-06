@@ -81,16 +81,15 @@ Primer párrafo que responde la pregunta.
 
 Enlaces internos con rutas del sitio, por ejemplo `[contacto](/contacto)`.
 
-## Publicación en el hosting
+## Publicación
 
-1. Crea `.env.local` con los valores de producción (dominio, GA4, Search Console y Web3Forms).
-2. `npm run build`.
-3. Sube **el contenido** de `out/` (no la carpeta) a la raíz pública del hosting. En Hostinger: hPanel → Sitios web → Administrador de archivos → `public_html` del dominio (o por FTP con los datos de hPanel → Archivos → Cuentas FTP). Borra antes el `default.php` que crea Hostinger.
-4. Activa el certificado SSL gratuito en el panel del hosting (en Hostinger: hPanel → Seguridad → SSL).
-5. `out/.htaccess` ya trae HTTPS forzado, quitar `www`, página 404, la redirección de `/servicios/eventos`, caché y cabeceras básicas. Funciona en hostings Apache o LiteSpeed. En Nginx habría que trasladar esas reglas a la configuración del servidor.
-6. En Search Console, verifica con la meta tag y envía `https://tu-dominio/sitemap.xml`.
+La web se publica sola en **GitHub Pages** con cada cambio en `main` (`.github/workflows/deploy.yml`), igual que el resto de webs. El workflow hace `npm run build` con el dominio y la clave de Web3Forms y publica `out/`.
 
-Cada cambio de contenido requiere repetir los pasos 2 y 3.
+- Dominio: `public/CNAME` (`saboresentupuerta.com`).
+- DNS en Hostinger (Dominios → DNS): registros A de `@` a las IP de GitHub Pages y CNAME de `www` a `fcamposanfeda-collab.github.io`.
+- Configuración única en GitHub: Settings → Pages → Source: **GitHub Actions**; dominio personalizado `saboresentupuerta.com` y **Enforce HTTPS**.
+- GA4 y Search Console: variables del repositorio `NEXT_PUBLIC_GA_ID` y `NEXT_PUBLIC_GSC_VERIFICATION` (Settings → Secrets and variables → Actions → Variables).
+- En Search Console, envía `https://saboresentupuerta.com/sitemap.xml`.
 
 ## Analítica
 
