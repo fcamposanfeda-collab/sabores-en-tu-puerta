@@ -25,6 +25,7 @@ export function ContactForm() {
     ...initial,
     servicio: params.get("servicio") ?? "",
     localidad: params.get("localidad") ?? "",
+    mensaje: params.get("mensaje") ?? "",
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "error">("idle");
