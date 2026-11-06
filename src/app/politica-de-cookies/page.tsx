@@ -15,7 +15,7 @@ export default function CookiesPage() {
       </p>
       <h2>Si aceptas la medición</h2>
       <p>
-        Se carga Google Analytics 4, solo si existe un identificador en la configuración del sitio y has aceptado. Analytics usa cookies para distinguir visitas y medir clics en llamada, WhatsApp y envío del formulario. TODO: anotar el nombre exacto de las cookies de la propiedad de GA4 cuando el ID esté creado.
+        Se carga Google Analytics 4, solo si existe un identificador en la configuración del sitio y has aceptado. Analytics usa cookies para distinguir visitas y medir clics en llamada, WhatsApp y envío del formulario. Las cookies de Google Analytics empiezan por «_ga» y duran hasta dos años.
       </p>
       <h2>Si rechazas</h2>
       <p>

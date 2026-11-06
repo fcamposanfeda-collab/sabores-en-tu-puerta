@@ -6,12 +6,12 @@ export function PhotoFrame({
   alt,
   className = "",
   priority = false,
-  todo,
 }: {
   src: string;
   alt: string;
   className?: string;
   priority?: boolean;
+  /** Nota interna de qué foto falta. No se muestra en la web. */
   todo: string;
 }) {
   const ready = publicImage(src);
@@ -30,7 +30,6 @@ export function PhotoFrame({
         <div className="flex h-full min-h-40 flex-col items-center justify-center gap-2 p-4 text-center">
           <img src="/logo-oscuro.png" alt="" width={72} height={72} className="h-16 w-auto opacity-90" />
           <p className="font-serif text-lg text-green-deep">{alt}</p>
-          <p className="text-xs uppercase tracking-[0.14em] text-ink-soft">TODO: {todo}</p>
         </div>
       )}
     </div>

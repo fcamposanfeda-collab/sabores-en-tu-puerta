@@ -12,7 +12,7 @@ export default function PrivacyPage() {
   return (
     <LegalLayout title="Política de privacidad" path="/politica-de-privacidad">
       <p>
-        Responsable del tratamiento: {site.legalName}. CIF: {site.cif}. Domicilio: {site.address.streetAddress}, {site.address.postalCode} {site.address.addressLocality}. Contacto: {site.email} y {site.phoneDisplay}. TODO: completar razón social, CIF y domicilio antes del lanzamiento.
+        Responsable del tratamiento: {site.legalName}. CIF: {site.cif}. Domicilio: {site.address.streetAddress}, {site.address.postalCode} {site.address.addressLocality}. Contacto: {site.email} y {site.phoneDisplay}.
       </p>
       <h2>Qué datos recogemos</h2>
       <p>
@@ -24,11 +24,11 @@ export default function PrivacyPage() {
       </p>
       <h2>Cuánto tiempo</h2>
       <p>
-        TODO: fijar el plazo de conservación (por ejemplo, el tiempo necesario para gestionar la solicitud y los plazos legales si llega a haber un encargo). Hasta entonces, no se debe afirmar un plazo concreto.
+        Conservamos los datos el tiempo necesario para atender tu solicitud y, si no llega a contratarse ningún servicio, como máximo un año desde el último contacto. Si hay encargo, se conservan mientras dure la relación y, después, durante los plazos que exigen las obligaciones legales, fiscales y mercantiles.
       </p>
       <h2>Destinatarios</h2>
       <p>
-        Los datos del formulario se envían por correo electrónico mediante el servicio Web3Forms, que actúa como encargado del tratamiento. TODO: firmar el contrato de encargado e indicar la ubicación del tratamiento.
+        Los datos del formulario se envían por correo electrónico mediante el servicio Web3Forms, que actúa como encargado del tratamiento. Si algún proveedor trata datos fuera del Espacio Económico Europeo, lo hace con las garantías previstas en el Reglamento General de Protección de Datos. No cedemos tus datos a terceros salvo obligación legal.
       </p>
       <h2>Derechos</h2>
       <p>

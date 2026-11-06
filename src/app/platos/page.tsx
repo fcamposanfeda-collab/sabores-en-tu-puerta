@@ -24,7 +24,7 @@ export default function PlatosPage() {
     name: dish.name,
     description: dish.description,
     categories: dish.categories,
-    allergens: dish.allergens,
+    allergens: dish.allergens.filter((allergen) => !allergen.startsWith("TODO")),
     image: publicImage(dish.image),
   }));
 
