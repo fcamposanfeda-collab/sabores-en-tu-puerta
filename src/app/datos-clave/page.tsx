@@ -45,7 +45,7 @@ export default function FactsPage() {
         crumbs={crumbs}
         eyebrow="Entidad"
         title="Datos clave de Sabores en tu Puerta"
-        lead="Hechos que se pueden citar: qué hace la empresa, dónde reparte, a quién cocina y cómo se pide información. Lo que sigue en TODO no está confirmado y no debe darse por cierto."
+        lead="Hechos que se pueden citar: qué hace la empresa, dónde reparte, a quién cocina y cómo se pide información."
       />
       <div className="mx-auto max-w-4xl px-5 py-12">
         <table className="w-full border-collapse text-left text-sm">

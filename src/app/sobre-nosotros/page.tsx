@@ -38,7 +38,7 @@ export default function AboutPage() {
         </p>
         <h2 className="font-serif text-4xl text-green-deep">Mayores y dietas adaptadas</h2>
         <p>
-          En residencias y centros de mayores el menú no es una carta fija de restaurante. Se adapta a lo que el centro indica: texturas, dietas y particularidades. Hay respaldo de un nutricionista en la forma de plantear los menús. No prometemos resultados de salud ni publicamos un número de colegiación: TODO si quieres añadir el nombre y la acreditación, con su permiso.
+          En residencias y centros de mayores el menú no es una carta fija de restaurante. Se adapta a lo que el centro indica: texturas, dietas y particularidades. Hay respaldo de un nutricionista en la forma de plantear los menús. No prometemos resultados de salud.
         </p>
         <h2 className="font-serif text-4xl text-green-deep">Compromisos</h2>
         <ul className="list-disc space-y-2 pl-5">
@@ -46,13 +46,10 @@ export default function AboutPage() {
           <li>Ingredientes de primeras marcas.</li>
           <li>Conservación orientada a cuidar los nutrientes.</li>
           <li>Menús equilibrados y adaptados cuando nos lo pedís.</li>
-          <li>Controles de higiene en la elaboración. TODO: publicar el registro sanitario si se quiere mostrar.</li>
+          <li>Controles de higiene en la elaboración.</li>
           <li>Presupuesto claro antes de confirmar.</li>
           <li>Zona declarada: Provincia de Ciudad Real.</li>
         </ul>
-        <p>
-          TODO: años de trayectoria, equipo, obrador y fotografías propias del servicio. No se han inventado.
-        </p>
         <CtaPair />
       </article>
     </>

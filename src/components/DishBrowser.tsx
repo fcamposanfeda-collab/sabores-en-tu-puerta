@@ -52,9 +52,7 @@ export function DishBrowser({ dishes }: { dishes: DishCard[] }) {
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={dish.image} alt="" className="absolute inset-0 h-full w-full object-cover" />
                 ) : (
-                  <p className="relative text-xs uppercase tracking-[0.14em] text-ink-soft">
-                    TODO: foto de {dish.name}
-                  </p>
+                  <p className="relative font-serif text-lg text-green-deep">{dish.name}</p>
                 )}
               </div>
               <div className="flex flex-1 flex-col p-5">

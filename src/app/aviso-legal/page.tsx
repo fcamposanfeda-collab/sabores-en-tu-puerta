@@ -25,7 +25,7 @@ export default function LegalNoticePage() {
         Los textos describen servicios de comida casera, colectividades y catering en la zona indicada. El presupuesto se envía de forma individual.
       </p>
       <p>
-        Los contenidos de esta web (textos, logotipo recreado y estructura) pertenecen a su titular. TODO: sustituir el emblema por el archivo SVG oficial si se dispone de él.
+        Los contenidos de esta web (textos, logotipo, fotografías y estructura) pertenecen a su titular. No se permite su reproducción sin autorización.
       </p>
     </LegalLayout>
   );

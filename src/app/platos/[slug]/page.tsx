@@ -28,6 +28,7 @@ export default async function DishPage({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const dish = getDish(slug);
   if (!dish) notFound();
+  const confirmedAllergens = dish.allergens.filter((allergen) => !allergen.startsWith("TODO"));
   const crumbs = [
     { name: "Inicio", path: "/" },
     { name: "Nuestros platos", path: "/platos" },
@@ -61,11 +62,17 @@ export default async function DishPage({ params }: { params: Promise<{ slug: str
             ))}
           </ul>
           <h2 className="mt-8 font-serif text-3xl text-green-deep">Alérgenos</h2>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-ink-soft">
-            {dish.allergens.map((allergen) => (
-              <li key={allergen}>{allergen}</li>
-            ))}
-          </ul>
+          {confirmedAllergens.length > 0 ? (
+            <ul className="mt-3 list-disc space-y-1 pl-5 text-ink-soft">
+              {confirmedAllergens.map((allergen) => (
+                <li key={allergen}>{allergen}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-3 text-ink-soft">
+              Pendiente de publicar. Si tienes alguna alergia o intolerancia, dínoslo al pedir y te confirmamos los alérgenos del plato.
+            </p>
+          )}
           <p className="mt-6 text-sm leading-relaxed text-ink-soft">
             Esta ficha no es una declaración de alérgenos de un plato servido. Cuando el encargo sea real, la información se concreta en el presupuesto.
           </p>
