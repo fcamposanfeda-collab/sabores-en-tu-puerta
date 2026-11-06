@@ -2,30 +2,77 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { CallButton, WhatsappButton } from "@/components/Buttons";
-import { MealComposition } from "@/components/MealComposition";
 import { ContactForm } from "@/components/ContactForm";
 import { FaqList } from "@/components/FaqList";
 import { JsonLd } from "@/components/JsonLd";
-import { dishes } from "@/data/dishes";
+import { ServiceFinder } from "@/components/ServiceFinder";
+import { WeekMenu } from "@/components/WeekMenu";
+import { ZoneChecker, type ZoneEntry } from "@/components/ZoneChecker";
 import { faqs } from "@/data/faqs";
-import { enabledLocalities, nearestHub, nearestKm } from "@/data/localities";
-import { services } from "@/data/services";
+import { enabledLocalities, localities, nearestHub, nearestKm } from "@/data/localities";
 import { site } from "@/data/site";
-import { publicImage } from "@/lib/images";
 import { faqSchema, graph, localBusinessSchema, organizationSchema, websiteSchema } from "@/lib/schema";
 
 const homeFaqs = faqs.filter((faq) => faq.home);
-const featured = dishes.slice(0, 4);
-const homeServices = [
-  services.find((service) => service.slug === "comida-a-domicilio")!,
-  services.find((service) => service.slug === "colectividades")!,
-  ...services.filter(
-    (service) =>
-      service.slug !== "comida-a-domicilio" &&
-      service.slug !== "colectividades" &&
-      service.slug !== "catering-monterias-eventos-caza",
-  ),
+
+const audiences = [
+  {
+    title: "Para casa",
+    text: "Comida casera para ti o tu familia, con el menú de la semana resuelto.",
+    image: "/images/platos/real-cocido.jpg",
+    alt: "Cocido completo en su envase",
+    href: "/servicios/comida-a-domicilio",
+    service: "Comida a domicilio",
+  },
+  {
+    title: "Personas mayores",
+    text: "Menús adaptados en textura y dieta, para casa o para residencias y centros.",
+    image: "/images/platos/real-textura.jpg",
+    alt: "Puré y pescado desmigado, menú de textura adaptada",
+    href: "/menus-especializados/mayores",
+    service: "Comida a domicilio",
+  },
+  {
+    title: "Colegios y guarderías",
+    text: "Menús equilibrados para colectividades, con dietas adaptadas cuando hacen falta.",
+    image: "/images/platos/real-arroz-verduras.jpg",
+    alt: "Arroz con verduras en su envase",
+    href: "/servicios/colectividades",
+    service: "Reparto a colectividades",
+  },
+  {
+    title: "Empresas",
+    text: "Coffee break, tapas y comida para la oficina o una jornada de trabajo.",
+    image: "/images/platos/real-ensalada.jpg",
+    alt: "Ensalada de la huerta en su envase",
+    href: "/servicios/catering-empresa-y-eventos",
+    service: "Catering en tu empresa y eventos",
+  },
+  {
+    title: "Celebraciones",
+    text: "Un menú a medida para una comida familiar, un cumpleaños o un evento.",
+    image: "/images/platos/real-solomillo.jpg",
+    alt: "Solomillo a la pimienta con patatas",
+    href: "/servicios/catering-personalizado",
+    service: "Catering personalizado para eventos",
+  },
+  {
+    title: "Monterías y caza",
+    text: "Desayuno campero, almuerzo y comida en la finca para el día de caza.",
+    image: "/images/platos/real-migas.jpg",
+    alt: "Migas del pastor con uvas",
+    href: "/servicios/catering-monterias-eventos-caza",
+    service: "Catering para monterías y caza",
+  },
 ];
+
+const zones: ZoneEntry[] = localities.map((locality) => ({
+  slug: locality.slug,
+  name: locality.name,
+  enabled: locality.enabled,
+  km: Math.round(nearestKm(locality)),
+  hub: nearestHub(locality),
+}));
 
 const pillars = [
   { title: "Comida casera y de calidad", text: "Elaborada con sabor de casa, no como una línea industrial anónima.", icon: HouseIcon },
@@ -55,11 +102,28 @@ export default function HomePage() {
           sizes="100vw"
           className="object-cover object-top"
         />
-        <div className="relative z-10 mx-auto max-w-xl px-4 pb-8 pt-[24rem] text-center sm:pt-[20rem] lg:pt-[32vw] lg:pb-10">
-          <h1 className="mx-auto max-w-md font-serif text-lg leading-snug text-green-deep sm:text-xl lg:text-2xl">
-            <span className="font-semibold">Menú basal</span> con dietas equilibradas, especializadas y adaptadas a cada cliente o usuario.
+        <div className="relative z-10 mx-auto max-w-xl px-4 pb-8 pt-[25.5rem] text-center sm:pt-[20rem] lg:pt-[32vw] lg:pb-10">
+          <h1 className="mx-auto max-w-lg font-serif text-2xl leading-tight text-green-deep sm:text-3xl lg:text-4xl">
+            Comida casera a domicilio, con menús adaptados a cada persona
           </h1>
-          <ul className="mx-auto mt-3 grid max-w-md grid-cols-2 justify-center gap-y-5 sm:mt-4 sm:flex sm:gap-0">
+          <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-ink sm:text-base">
+            Cocinamos nosotros, con el respaldo de un nutricionista. Tú nos dices para quién es y te lo llevamos a la puerta en Ciudad Real, Puertollano y alrededores.
+          </p>
+          <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link
+              href="#te-ayudamos"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-green-dark px-6 text-sm font-semibold uppercase tracking-[0.12em] text-white hover:bg-green-deep sm:w-auto"
+            >
+              Pide presupuesto <span aria-hidden="true">&nbsp;→</span>
+            </Link>
+            <Link
+              href="#como-funciona"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-green-dark bg-cream/80 px-6 text-sm font-semibold uppercase tracking-[0.12em] text-green-deep hover:bg-green-deep hover:text-cream sm:w-auto"
+            >
+              Cómo funciona
+            </Link>
+          </div>
+          <ul className="mx-auto mt-6 grid max-w-md grid-cols-2 justify-center gap-y-5 sm:mt-4 sm:flex sm:gap-0">
             {pillars.map((pillar, index) => {
               const Icon = pillar.icon;
               return (
@@ -86,21 +150,40 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="servicios-title">
-        <h2 id="servicios-title" className="font-serif text-4xl text-green-deep">Servicios</h2>
+      <section className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="para-quien-title">
+        <h2 id="para-quien-title" className="font-serif text-4xl text-green-deep">¿Para quién cocinamos?</h2>
         <p className="mt-3 max-w-2xl text-ink-soft">
-          Elige la que necesites y cuéntanos más para poder orientarte.
+          No eliges platos de una carta: nosotros preparamos el menú según para quién sea. Elige tu caso.
         </p>
-        <ul className="mt-8 grid gap-4 md:grid-cols-2">
-          {homeServices.map((service) => (
-            <li key={service.slug} className="relative hover:z-10">
-              <Link
-                href={`/servicios/${service.slug}`}
-                className="block h-full rounded-3xl border border-line bg-paper p-6 transition duration-300 ease-out hover:z-10 hover:scale-[1.04] hover:border-green hover:shadow-lg focus-visible:scale-[1.04] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
-              >
-                <h3 className="font-serif text-2xl text-green-deep">{service.name}</h3>
-                <p className="mt-2 text-ink-soft">{service.card}</p>
-              </Link>
+        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {audiences.map((audience) => (
+            <li key={audience.title} className="group flex flex-col overflow-hidden rounded-3xl border border-line bg-paper transition hover:border-green hover:shadow-lg">
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <Image
+                  src={audience.image}
+                  alt={audience.alt}
+                  fill
+                  sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
+                  className="object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+                <h3 className="font-serif text-2xl text-green-deep">
+                  <Link href={audience.href} className="hover:underline">{audience.title}</Link>
+                </h3>
+                <p className="mt-2 flex-1 text-sm text-ink-soft">{audience.text}</p>
+                <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold">
+                  <Link
+                    href={`/contacto/?${new URLSearchParams({ servicio: audience.service }).toString()}`}
+                    className="text-green-dark underline-offset-2 hover:underline"
+                  >
+                    Pedir presupuesto <span aria-hidden="true">→</span>
+                  </Link>
+                  <Link href={audience.href} className="text-ink-soft underline-offset-2 hover:underline">
+                    Saber más
+                  </Link>
+                </div>
+              </div>
             </li>
           ))}
         </ul>
@@ -154,51 +237,28 @@ export default function HomePage() {
               </li>
             ))}
           </ol>
+          <div className="mt-10 text-center">
+            <Link
+              href="#te-ayudamos"
+              className="inline-flex min-h-12 items-center justify-center rounded-full bg-green-dark px-6 text-sm font-semibold uppercase tracking-[0.12em] text-white hover:bg-green-deep"
+            >
+              Empezar ahora <span aria-hidden="true">&nbsp;→</span>
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="platos-title">
+      <section className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="menu-title">
         <div className="flex flex-wrap items-end justify-between gap-4">
-          <h2 id="platos-title" className="font-serif text-4xl text-green-deep">Platos de ejemplo</h2>
+          <h2 id="menu-title" className="font-serif text-4xl text-green-deep">Un menú de ejemplo</h2>
           <Link href="/platos" className="text-sm font-semibold text-green-dark underline-offset-2 hover:underline">
-            Ver la carta
+            Ver más platos
           </Link>
         </div>
-        <p className="mt-3 max-w-2xl text-sm text-ink-soft">
-          Estas imágenes son ejemplos de platos de comida casera que puedas encontrar en tus menús.
+        <p className="mt-3 max-w-3xl leading-relaxed text-ink-soft">
+          Cada comida lleva primer plato, segundo, pan y postre. Así podría ser una semana: el menú real lo prepara nuestro equipo según la temporada y lo que necesita cada persona.
         </p>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {featured.map((dish) => {
-            const photo = publicImage(dish.image);
-            return (
-              <li key={dish.slug} className="flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-paper">
-                {photo ? (
-                  <div className="relative aspect-[4/3] shrink-0">
-                    <Image
-                      src={photo}
-                      alt={dish.name}
-                      fill
-                      sizes="(min-width: 1024px) 22vw, (min-width: 640px) 45vw, 100vw"
-                      className="object-cover"
-                    />
-                  </div>
-                ) : null}
-                <div className="flex flex-1 flex-col p-5 sm:min-h-56">
-                  <h3 className="font-serif text-2xl text-green-deep">
-                    <Link href={`/platos/${dish.slug}`} className="hover:underline">{dish.name}</Link>
-                  </h3>
-                  <p className="mt-2 text-sm text-ink-soft">{dish.description}</p>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-      </section>
-
-      <section className="bg-paper py-16">
-        <div className="mx-auto max-w-6xl px-5">
-          <MealComposition />
-        </div>
+        <WeekMenu />
       </section>
 
       <section className="bg-green-deep py-16 text-cream" aria-labelledby="porque-title">
@@ -215,12 +275,27 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section id="te-ayudamos" className="scroll-mt-24 bg-paper py-16" aria-labelledby="ayuda-title">
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+          <div>
+            <h2 id="ayuda-title" className="font-serif text-4xl text-green-deep">Te ayudamos a elegir</h2>
+            <p className="mt-3 leading-relaxed text-ink-soft">
+              Cuatro preguntas y te llevamos al presupuesto con todo ya rellenado. Sin compromiso.
+            </p>
+          </div>
+          <ServiceFinder localities={enabledLocalities.map((locality) => locality.name)} />
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="zonas-title">
-        <h2 id="zonas-title" className="font-serif text-4xl text-green-deep">Dónde repartimos</h2>
-        <p className="mt-3 max-w-3xl text-ink-soft leading-relaxed">
-          {site.areaSummary} Si tu localidad está en el límite, o si la entrega es en una finca, lo confirmamos al pedir presupuesto.
+        <h2 id="zonas-title" className="font-serif text-4xl text-green-deep">¿Llegamos a tu pueblo?</h2>
+        <p className="mt-3 max-w-3xl leading-relaxed text-ink-soft">
+          {site.areaSummary} Escribe tu localidad y te lo decimos.
         </p>
-        <ul className="mt-6 flex flex-wrap gap-2">
+        <div className="mt-6 max-w-2xl">
+          <ZoneChecker zones={zones} radiusKm={site.radiusKm} />
+        </div>
+        <ul className="mt-8 flex flex-wrap gap-2">
           {enabledLocalities.slice(0, 12).map((locality) => (
             <li key={locality.slug}>
               <Link
@@ -238,29 +313,6 @@ export default function HomePage() {
         <Link href="/zonas-de-reparto" className="mt-4 inline-block text-sm font-semibold text-green-dark underline">
           Ver todas las zonas
         </Link>
-      </section>
-
-      <section className="bg-paper py-16">
-        <div className="mx-auto grid max-w-6xl gap-8 px-5 md:grid-cols-2">
-          <article>
-            <h2 className="font-serif text-4xl text-green-deep">Colectividades</h2>
-            <p className="mt-3 leading-relaxed text-ink-soft">
-              Colegios, guarderías, residencias y centros de mayores en la zona. Menús equilibrados y dietas adaptadas, con trato profesional y presupuesto por escrito.
-            </p>
-            <Link href="/servicios/colectividades" className="mt-4 inline-block font-semibold text-green-dark underline">
-              Comida para colegios y residencias
-            </Link>
-          </article>
-          <article>
-            <h2 className="font-serif text-4xl text-green-deep">Catering en tu empresa y eventos</h2>
-            <p className="mt-3 leading-relaxed text-ink-soft">
-              Coffee break, tapas y un catering pequeño para la oficina o para tu evento en Ciudad Real y alrededores.
-            </p>
-            <Link href="/servicios/catering-empresa-y-eventos" className="mt-4 inline-block font-semibold text-green-dark underline">
-              Catering para empresas
-            </Link>
-          </article>
-        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-8" aria-labelledby="faq-title">
