@@ -12,7 +12,7 @@ export default function PrivacyPage() {
   return (
     <LegalLayout title="Política de privacidad" path="/politica-de-privacidad">
       <p>
-        Responsable del tratamiento: {site.legalName}. CIF: {site.cif}. Domicilio: {site.address.streetAddress}. Contacto: {site.email} y {site.phoneDisplay}. TODO: completar razón social, CIF y domicilio antes del lanzamiento.
+        Responsable del tratamiento: {site.legalName}. CIF: {site.cif}. Domicilio: {site.address.streetAddress}, {site.address.postalCode} {site.address.addressLocality}. Contacto: {site.email} y {site.phoneDisplay}. TODO: completar razón social, CIF y domicilio antes del lanzamiento.
       </p>
       <h2>Qué datos recogemos</h2>
       <p>

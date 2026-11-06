@@ -85,8 +85,8 @@ Enlaces internos con rutas del sitio, por ejemplo `[contacto](/contacto)`.
 
 1. Crea `.env.local` con los valores de producción (dominio, GA4, Search Console y Web3Forms).
 2. `npm run build`.
-3. Sube **el contenido** de `out/` (no la carpeta) a la raíz pública del hosting (`public_html` o similar) por FTP o el gestor de archivos.
-4. Activa el certificado SSL gratuito (Let's Encrypt) en el panel del hosting.
+3. Sube **el contenido** de `out/` (no la carpeta) a la raíz pública del hosting. En Hostinger: hPanel → Sitios web → Administrador de archivos → `public_html` del dominio (o por FTP con los datos de hPanel → Archivos → Cuentas FTP). Borra antes el `default.php` que crea Hostinger.
+4. Activa el certificado SSL gratuito en el panel del hosting (en Hostinger: hPanel → Seguridad → SSL).
 5. `out/.htaccess` ya trae HTTPS forzado, quitar `www`, página 404, la redirección de `/servicios/eventos`, caché y cabeceras básicas. Funciona en hostings Apache o LiteSpeed. En Nginx habría que trasladar esas reglas a la configuración del servidor.
 6. En Search Console, verifica con la meta tag y envía `https://tu-dominio/sitemap.xml`.
 

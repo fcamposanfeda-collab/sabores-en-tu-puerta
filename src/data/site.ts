@@ -2,7 +2,7 @@ export const site = {
   name: "Sabores en tu Puerta",
   shortName: "Sabores",
   tagline: "Comida casera, como en casa.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://saboresentupuerta.es",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://saboresentupuerta.com",
   locale: "es-ES",
   ogLocale: "es_ES",
   email: "Saboresentupuerta1@gmail.com",
@@ -13,18 +13,22 @@ export const site = {
   instagramHandle: "@saboresentupuerta1",
   /** Enlace compartido de la ficha de Google. TODO: sustituir por la URL canónica de Google Maps cuando se confirme. */
   googleBusinessUrl: "https://share.google/vM7KDvmDlz0zzlWbQ",
-  /** TODO: razón social, CIF y domicilio fiscal. No publicar datos de registros sin confirmarlos. */
-  legalName: "TODO: razón social",
-  cif: "TODO: CIF",
+  legalName: "Sabores en tu Puerta, S.L.",
+  cif: "B21780341",
   address: {
-    streetAddress: "TODO: dirección",
-    postalCode: "TODO: código postal",
+    streetAddress: "Ctra. de Toledo, 26, Edificio Cumbria, oficina 304",
+    postalCode: "13005",
     addressLocality: "Ciudad Real",
     addressRegion: "Castilla-La Mancha",
     addressCountry: "ES",
   },
-  /** TODO: horario de atención y coordenadas del obrador o punto de elaboración. */
-  openingHours: "TODO: horario",
+  /** Horario de atención. TODO: confirmar días (se asume de lunes a viernes) y coordenadas del obrador. */
+  openingHours: "De lunes a viernes, de 9:00 a 18:00",
+  openingHoursSchema: {
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "09:00",
+    closes: "18:00",
+  },
   geo: null as null | { latitude: number; longitude: number },
   hubs: ["Ciudad Real", "Puertollano"] as const,
   radiusKm: 60,
