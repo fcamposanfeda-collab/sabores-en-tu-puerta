@@ -25,7 +25,7 @@ export default function ContactPage() {
         crumbs={crumbs}
         eyebrow="Contacto"
         title="Pide información o un presupuesto"
-        lead="Dinos el servicio, la localidad y un número aproximado de comensales. Respondemos a esa solicitud. No se crea ningún pedido automático."
+        lead="Dinos el servicio y la localidad. Respondemos a esa solicitud. No se crea ningún pedido automático."
       />
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-12 lg:grid-cols-[0.8fr_1.2fr]">
         <address className="not-italic">

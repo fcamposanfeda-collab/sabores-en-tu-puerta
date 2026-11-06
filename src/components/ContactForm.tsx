@@ -13,8 +13,6 @@ const initial = {
   email: "",
   servicio: "",
   localidad: "",
-  comensales: "",
-  fecha: "",
   mensaje: "",
   rgpd: false,
   company: "",
@@ -58,7 +56,7 @@ export function ContactForm() {
       );
       return;
     }
-    const { nombre, telefono, email, servicio, localidad, comensales, fecha, mensaje } = parsed.data;
+    const { nombre, telefono, email, servicio, localidad, mensaje } = parsed.data;
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -73,8 +71,6 @@ export function ContactForm() {
           Email: email,
           Servicio: servicio,
           Localidad: localidad,
-          Comensales: comensales,
-          Fecha: fecha || "No indicada",
           Mensaje: mensaje,
         }),
       });
@@ -177,29 +173,6 @@ export function ContactForm() {
             ))}
             <option value="Otra dentro de la zona">Otra dentro de la zona</option>
           </select>
-        </Field>
-      </div>
-      <div className="grid gap-4 sm:grid-cols-2">
-        <Field label="N.º aproximado de comensales" name="comensales" error={errors.comensales}>
-          <input
-            id="comensales"
-            name="comensales"
-            inputMode="text"
-            value={values.comensales}
-            onChange={(event) => update("comensales", event.target.value)}
-            className={inputClass}
-            required
-          />
-        </Field>
-        <Field label="Fecha" name="fecha" error={errors.fecha} optional>
-          <input
-            id="fecha"
-            name="fecha"
-            type="date"
-            value={values.fecha}
-            onChange={(event) => update("fecha", event.target.value)}
-            className={inputClass}
-          />
         </Field>
       </div>
       <Field label="Mensaje" name="mensaje" error={errors.mensaje}>

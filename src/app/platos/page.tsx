@@ -40,7 +40,7 @@ export default function PlatosPage() {
         crumbs={crumbs}
         eyebrow="Carta"
         title="Platos caseros para casa, centros y celebraciones"
-        lead="Aquí puedes ver el tipo de cocina: primeros, segundos, menús de mayores, infantiles y dietas especiales. Son ejemplos. No hay precios."
+        lead="Aquí puedes ver el tipo de cocina: primeros, segundos, menús de mayores, infantiles y dietas especiales. Son ejemplos."
       />
       <div className="mx-auto max-w-6xl px-5 py-12">
         <MealComposition />

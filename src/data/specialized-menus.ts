@@ -20,7 +20,7 @@ export const specializedHub = {
   lead: "El menú basal lo plantea nuestro nutricionista a partir de lo que necesitas. Tú no montas la semana ni decides plato a plato: adaptamos la comida y te la llevamos.",
   paragraphs: [
     "Quien nos escribe suele buscar eso: una comida casera ya pensada. Partimos de un menú basal equilibrado y lo ajustamos al caso. Puede ser para quien entrena, para un niño, para una intolerancia, para una persona mayor o para una pauta ligada a un diagnóstico.",
-    "Nos cuentas la necesidad, para cuántas personas es y en qué localidad. El nutricionista prepara la propuesta. El reparto es en Ciudad Real, Puertollano y hasta 60 km. No hay precios publicados: cada encargo se concreta al pedir la información.",
+    "Nos cuentas la necesidad, para cuántas personas es y en qué localidad. El nutricionista prepara la propuesta. El reparto es en Ciudad Real, Puertollano y hasta 60 km. Cada encargo se concreta al pedir la información.",
     "No diagnosticamos, no sustituimos a tu médico y no prometemos un efecto sobre la salud. Si ya existe una pauta, el menú se cocina según lo que nos indiquéis.",
   ],
   faqs: [

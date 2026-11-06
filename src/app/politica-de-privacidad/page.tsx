@@ -16,7 +16,7 @@ export default function PrivacyPage() {
       </p>
       <h2>Qué datos recogemos</h2>
       <p>
-        Si envías el formulario, tratamos nombre, teléfono, email, tipo de servicio, localidad, número aproximado de comensales, fecha si la indicas y el mensaje. Si escribes por WhatsApp, teléfono o email, tratamos los datos que nos facilites en esa conversación.
+        Si envías el formulario, tratamos nombre, teléfono, email, tipo de servicio, localidad y el mensaje. Si escribes por WhatsApp, teléfono o email, tratamos los datos que nos facilites en esa conversación.
       </p>
       <h2>Para qué</h2>
       <p>

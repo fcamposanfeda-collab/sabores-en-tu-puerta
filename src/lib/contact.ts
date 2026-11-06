@@ -17,12 +17,6 @@ export const contactSchema = z.object({
     .regex(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Escribe un email válido."),
   servicio: z.string().trim().min(1, "Elige un tipo de servicio."),
   localidad: z.string().trim().min(1, "Indica la localidad."),
-  comensales: z
-    .string()
-    .trim()
-    .min(1, "Indica un número aproximado de comensales.")
-    .max(40),
-  fecha: z.string().trim().max(40).optional().or(z.literal("")),
   mensaje: z
     .string()
     .trim()

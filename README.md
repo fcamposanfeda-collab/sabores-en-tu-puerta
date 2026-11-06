@@ -2,7 +2,7 @@
 
 Web corporativa de comida casera y reparto a domicilio en Ciudad Real y alrededores. Hecha con Next.js (App Router), TypeScript y Tailwind CSS. Se exporta como web estática (HTML) y se sube a cualquier hosting.
 
-No hay precios. Los botones piden presupuesto, llamada o WhatsApp.
+Los botones piden presupuesto, llamada o WhatsApp.
 
 ## Arrancar
 

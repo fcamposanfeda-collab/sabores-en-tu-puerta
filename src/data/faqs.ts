@@ -30,21 +30,15 @@ export const faqs: Faq[] = [
     home: true,
   },
   {
-    question: "¿Hay precios en la web?",
-    answer:
-      "No. Ningún servicio tiene un precio publicado. El importe depende del menú, de las personas, de la localidad y de la fecha, así que una tarifa genérica no describiría el encargo. Pides presupuesto y te respondemos con una propuesta concreta. No hay alta automática ni cuotas.",
-    home: true,
-  },
-  {
     question: "¿Trabajáis con colegios y guarderías?",
     answer:
-      "Sí, dentro del servicio de colectividades, junto con residencias y centros de mayores. El menú se prepara con el centro, incluyendo los alérgenos que nos indiquéis. La zona es Ciudad Real, Puertollano y el radio de 60 km. El presupuesto no está en la web.",
+      "Sí, dentro del servicio de colectividades, junto con residencias y centros de mayores. El menú se prepara con el centro, incluyendo los alérgenos que nos indiquéis. La zona es Ciudad Real, Puertollano y el radio de 60 km.",
     home: true,
   },
   {
     question: "¿Cómo pido un presupuesto?",
     answer:
-      "Por el formulario de contacto, por WhatsApp al 675 601 543 o llamando a ese mismo número. Conviene indicar nombre, teléfono, tipo de servicio, localidad, número aproximado de comensales y fecha si ya la tienes. Respondemos a ese encargo; no se genera un pedido solo.",
+      "Por el formulario de contacto, por WhatsApp al 675 601 543 o llamando a ese mismo número. Conviene indicar nombre, teléfono, tipo de servicio y localidad. Respondemos a ese encargo; no se genera un pedido solo.",
   },
   {
     question: "¿Puedo escribir por WhatsApp?",
@@ -64,13 +58,13 @@ export const faqs: Faq[] = [
   {
     question: "¿Hacéis coffee break o catering para empresas en Ciudad Real?",
     answer:
-      "Sí. Llevamos coffee break, tapas y un catering pequeño a oficinas, salas y eventos de empresa en Ciudad Real, Puertollano y hasta 60 km. Hace falta la dirección, la hora y el número de personas. El presupuesto se envía por escrito; en la web no hay tarifa. WhatsApp y teléfono: 675 601 543.",
+      "Sí. Llevamos coffee break, tapas y un catering pequeño a oficinas, salas y eventos de empresa en Ciudad Real, Puertollano y hasta 60 km. Hace falta la dirección, la hora y el número de personas. El presupuesto se envía por escrito. WhatsApp y teléfono: 675 601 543.",
     home: true,
   },
   {
     question: "¿Hacéis eventos que no sean de caza?",
     answer:
-      "Sí. Las celebraciones, las comidas de grupo y los menús para una ocasión concreta se piden como catering personalizado para eventos. Siempre dentro de Ciudad Real, Puertollano y 60 km, y siempre con un presupuesto previo, sin precio en la web.",
+      "Sí. Las celebraciones, las comidas de grupo y los menús para una ocasión concreta se piden como catering personalizado para eventos. Siempre dentro de Ciudad Real, Puertollano y 60 km, y siempre con un presupuesto previo.",
   },
   {
     question: "¿Qué ingredientes utilizáis?",

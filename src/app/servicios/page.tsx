@@ -35,7 +35,7 @@ export default function ServiciosPage() {
         crumbs={crumbs}
         eyebrow="Servicios"
         title="Comida casera, colectividades y catering en Ciudad Real"
-        lead="Cinco servicios, una misma cocina. Todos se piden por presupuesto, cubren Ciudad Real, Puertollano y hasta 60 km, y ninguno tiene un precio publicado."
+        lead="Cinco servicios, una misma cocina. Todos se piden por presupuesto y cubren Ciudad Real, Puertollano y hasta 60 km."
       />
       <div className="mx-auto grid max-w-6xl gap-5 px-5 py-12 md:grid-cols-2">
         {services.map((service) => (
