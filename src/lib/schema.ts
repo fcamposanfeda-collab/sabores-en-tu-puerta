@@ -16,6 +16,7 @@ export function organizationSchema() {
     "@type": "Organization",
     "@id": organizationId(),
     name: site.name,
+    legalName: site.legalName,
     url: origin(),
     email: site.email,
     telephone: site.phoneTel,
@@ -64,9 +65,15 @@ export function localBusinessSchema(areaName?: string) {
     servesCuisine: "Cocina casera española",
     address: {
       "@type": "PostalAddress",
+      streetAddress: site.address.streetAddress,
+      postalCode: site.address.postalCode,
       addressLocality: site.address.addressLocality,
       addressRegion: site.address.addressRegion,
       addressCountry: site.address.addressCountry,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      ...site.openingHoursSchema,
     },
     areaServed: areas,
     sameAs: [site.instagram, site.googleBusinessUrl],

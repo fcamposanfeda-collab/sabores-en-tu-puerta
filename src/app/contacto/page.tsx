@@ -58,7 +58,9 @@ export default function ContactPage() {
             <li>
               Zona: {site.areaSummary}
             </li>
-            <li>Dirección postal: {site.address.streetAddress}</li>
+            <li>
+              Dirección postal: {site.address.streetAddress}, {site.address.postalCode} {site.address.addressLocality}
+            </li>
             <li>Horario: {site.openingHours}</li>
           </ul>
         </address>

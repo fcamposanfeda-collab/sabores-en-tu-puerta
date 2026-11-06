@@ -24,7 +24,7 @@ export function buildLlms() {
     `- Email: ${site.email}`,
     `- Instagram: ${site.instagram}`,
     `- Zona: ${site.areaSummary}`,
-    `- Dirección postal: ${site.address.streetAddress}`,
+    `- Dirección postal: ${site.address.streetAddress}, ${site.address.postalCode} ${site.address.addressLocality}`,
     `- Horario: ${site.openingHours}`,
     "",
     "## Páginas clave",
