@@ -20,7 +20,7 @@ export const specializedHub = {
   lead: "El menú basal lo plantea nuestro nutricionista a partir de lo que necesitas. Tú no montas la semana ni decides plato a plato: adaptamos la comida y te la llevamos.",
   paragraphs: [
     "Quien nos escribe suele buscar eso: una comida casera ya pensada. Partimos de un menú basal equilibrado y lo ajustamos al caso. Puede ser para quien entrena, para un niño, para una intolerancia, para una persona mayor o para una pauta ligada a un diagnóstico.",
-    "Nos cuentas la necesidad, para cuántas personas es y en qué localidad. El nutricionista prepara la propuesta. El reparto es en Ciudad Real, Puertollano y hasta 60 km. Cada encargo se concreta al pedir la información.",
+    "Nos cuentas la necesidad, para cuántas personas es y en qué localidad. El nutricionista prepara la propuesta. El reparto es en Ciudad Real, Puertollano y pueblos de alrededor. Cada encargo se concreta al pedir la información.",
     "No diagnosticamos, no sustituimos a tu médico y no prometemos un efecto sobre la salud. Si ya existe una pauta, el menú se cocina según lo que nos indiquéis.",
   ],
   faqs: [
@@ -50,13 +50,13 @@ export const specializedMenus: SpecializedMenu[] = [
     paragraphs: [
       "Nos dices cómo es la semana: días de entreno, si comes en casa o te lo llevas, y si hay algún alimento que no tomas. A partir de ahí la nutricionista encaja el menú basal. La cocina sigue siendo casera.",
       "No publicamos calorías ni una tabla de macros, y no prometemos un cambio de peso o de músculo. El servicio es la comida adaptada a lo que nos indiques, elaborada y repartida.",
-      "El reparto cubre Ciudad Real, Puertollano y hasta 60 km. El número de comidas y el día se confirman al pedir la información.",
+      "El reparto cubre Ciudad Real, Puertollano y pueblos de alrededor. El número de comidas y el día se confirman al pedir la información.",
     ],
     includes: [
       "Menú basal adaptado a la rutina de entreno que nos cuentes",
       "Cocina casera, sin que organices los platos",
       "Ajuste si hay algún alimento que no tomas",
-      "Reparto en Ciudad Real, Puertollano y el radio de 60 km",
+      "Reparto en Ciudad Real, Puertollano y pueblos de alrededor",
     ],
   },
   {
@@ -77,7 +77,7 @@ export const specializedMenus: SpecializedMenu[] = [
       "Menú basal infantil para comer en casa",
       "Adaptación si hay un alimento que no toma o una intolerancia",
       "Propuesta hecha por el nutricionista",
-      "Reparto en el radio de Ciudad Real y de Puertollano",
+      "Reparto en Ciudad Real, Puertollano y pueblos de alrededor",
     ],
   },
   {
@@ -98,7 +98,7 @@ export const specializedMenus: SpecializedMenu[] = [
       "Menú basal sin el ingrediente que nos indiquéis",
       "Confirmación de esa pauta antes de elaborar",
       "Sirve para casa y, si el centro lo pide, también para un comedor",
-      "Reparto en Ciudad Real, Puertollano y hasta 60 km",
+      "Reparto en Ciudad Real, Puertollano y pueblos de alrededor",
     ],
   },
   {
@@ -119,7 +119,7 @@ export const specializedMenus: SpecializedMenu[] = [
       "Menú basal para el día a día",
       "Elaboraciones más suaves o de otra textura, si nos lo pedís",
       "Para casa o para un centro de mayores",
-      "Reparto en el radio de 60 km",
+      "Reparto en Ciudad Real, Puertollano y pueblos de alrededor",
     ],
   },
   {
@@ -140,7 +140,7 @@ export const specializedMenus: SpecializedMenu[] = [
       "Menú basal a partir de la pauta que nos indiquéis",
       "Sin que traduzcas esa pauta a un menú semanal",
       "Confirmación contigo antes de elaborar",
-      "Reparto en Ciudad Real, Puertollano y hasta 60 km",
+      "Reparto en Ciudad Real, Puertollano y pueblos de alrededor",
     ],
   },
 ];

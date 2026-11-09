@@ -1,6 +1,6 @@
 import { site } from "@/data/site";
 import { services } from "@/data/services";
-import { enabledLocalities, nearestHub, nearestKm } from "@/data/localities";
+import { enabledLocalities } from "@/data/localities";
 import { faqs } from "@/data/faqs";
 import { dishCategories, dishes } from "@/data/dishes";
 import { specializedHub, specializedMenus } from "@/data/specialized-menus";
@@ -14,7 +14,7 @@ export function buildLlms() {
   const lines = [
     `# ${site.name}`,
     "",
-    `> ${site.name} elabora comida casera y la reparte a domicilio en ${site.areaSummary} También sirve colectividades (colegios, guarderías, residencias y centros de mayores), catering para empresas (coffee break, tapas y catering pequeño de oficina), catering personalizado para eventos y catering para monterías (desayuno campero, almuerzo y comida). Zona: Ciudad Real, Puertollano y hasta 60 km. El siguiente paso es pedir presupuesto por teléfono o WhatsApp al ${site.phoneDisplay}.`,
+    `> ${site.name} elabora comida casera y la reparte a domicilio en ${site.areaSummary} También sirve colectividades (colegios, guarderías, residencias y centros de mayores), catering para empresas (coffee break, tapas y catering pequeño de oficina), catering personalizado para eventos y catering para monterías (desayuno campero, almuerzo y comida). Zona: Ciudad Real, Puertollano y pueblos de alrededor. El siguiente paso es pedir presupuesto por teléfono o WhatsApp al ${site.phoneDisplay}.`,
     "",
     "## Datos de contacto",
     "",
@@ -54,11 +54,11 @@ export function buildLlms() {
       (menu) => `- [${menu.nav}](${origin()}${specializedHub.path}/${menu.slug}): ${menu.card}`,
     ),
     "",
-    "## Zonas dentro del radio",
+    "## Zonas de reparto",
     "",
     ...enabledLocalities.map(
       (locality) =>
-        `- [${locality.name}](${origin()}/zonas-de-reparto/${locality.slug}): ${nearestKm(locality)} km de ${nearestHub(locality)}`,
+        `- [${locality.name}](${origin()}/zonas-de-reparto/${locality.slug})`,
     ),
     "",
     "## Carta",
