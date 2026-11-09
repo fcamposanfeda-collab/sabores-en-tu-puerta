@@ -31,9 +31,8 @@ export const site = {
   },
   geo: null as null | { latitude: number; longitude: number },
   hubs: ["Ciudad Real", "Puertollano"] as const,
-  radiusKm: 60,
   areaSummary:
-    "Ciudad Real, Puertollano y localidades hasta 60 km a la redonda de cualquiera de las dos.",
+    "Ciudad Real, Puertollano y los pueblos de alrededor.",
   defaultWhatsappMessage:
     "Hola, quiero información y un presupuesto de Sabores en tu Puerta.",
 } as const;

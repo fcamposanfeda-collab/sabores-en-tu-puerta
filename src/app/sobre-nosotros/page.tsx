@@ -23,7 +23,7 @@ export default function AboutPage() {
         crumbs={crumbs}
         eyebrow="La casa"
         title="Comida casera, con el cuidado de quien cocina para otros"
-        lead="Sabores en tu Puerta elabora comida casera y la reparte a domicilio en Ciudad Real, Puertollano y hasta 60 km. El trabajo se centra en menús equilibrados, dietas adaptadas y el sabor de casa."
+        lead="Sabores en tu Puerta elabora comida casera y la reparte a domicilio en Ciudad Real, Puertollano y pueblos de alrededor. El trabajo se centra en menús equilibrados, dietas adaptadas y el sabor de casa."
       />
       <article className="mx-auto max-w-3xl space-y-5 px-5 py-12 text-lg leading-relaxed text-ink-soft">
         <p className="rounded-2xl border border-line bg-paper p-4 text-sm">

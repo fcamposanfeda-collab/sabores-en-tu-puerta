@@ -4,7 +4,7 @@ import { CtaPair } from "@/components/Buttons";
 import { FaqList } from "@/components/FaqList";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
-import { enabledLocalities, getLocality, nearestHub, nearestKm } from "@/data/localities";
+import { enabledLocalities, getLocality } from "@/data/localities";
 import { getService } from "@/data/services";
 import { pageMeta } from "@/lib/seo";
 import { breadcrumbSchema, faqSchema, graph, localBusinessSchema } from "@/lib/schema";
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!locality) return {};
   const title = `Comida a domicilio en ${locality.name}`.slice(0, 60);
   const description =
-    `Comida casera a domicilio en ${locality.name}, a ${nearestKm(locality)} km de ${nearestHub(locality)}. Menús y catering.`.slice(0, 155);
+    `Comida casera a domicilio en ${locality.name}. Menús adaptados, colectividades y catering. Pide presupuesto.`.slice(0, 155);
   return pageMeta({
     title,
     description,
@@ -51,11 +51,7 @@ export default async function ZonePage({ params }: { params: Promise<{ slug: str
       />
       <PageHero crumbs={crumbs} eyebrow="Reparto" title={`Comida casera a domicilio en ${locality.name}`} lead={locality.lead} />
       <article className="mx-auto max-w-6xl px-5 py-12">
-        <p className="text-sm text-ink-soft">
-          A {locality.kmFromCiudadReal} km de Ciudad Real y {locality.kmFromPuertollano} km de Puertollano, en línea recta. Centro de referencia: {nearestHub(locality)}.
-          {locality.edge ? " Está cerca del límite de 60 km y cada encargo se confirma." : ""}
-        </p>
-        <h2 className="mt-8 font-serif text-3xl text-green-deep">Cómo es el servicio en {locality.name}</h2>
+        <h2 className="font-serif text-3xl text-green-deep">Cómo es el servicio en {locality.name}</h2>
         <p className="mt-3 max-w-3xl leading-relaxed text-ink-soft">{locality.context}</p>
         <h2 className="mt-8 font-serif text-3xl text-green-deep">Cómo llega el reparto</h2>
         <p className="mt-3 max-w-3xl leading-relaxed text-ink-soft">{locality.delivery}</p>

@@ -8,13 +8,13 @@ export const faqs: Faq[] = [
   {
     question: "¿Hacéis comida a domicilio en Puertollano?",
     answer:
-      "Sí. Puertollano es uno de los dos puntos desde los que repartimos, junto con Ciudad Real. Cubrimos la ciudad y las localidades que quedan hasta 60 km en línea recta. El menú y el día se cierran al pedir presupuesto, por teléfono, WhatsApp o formulario. No es una suscripción.",
+      "Sí. Puertollano es uno de los dos puntos desde los que repartimos, junto con Ciudad Real. Cubrimos la ciudad y los pueblos de alrededor. El menú y el día se cierran al pedir presupuesto, por teléfono, WhatsApp o formulario. No es una suscripción.",
     home: true,
   },
   {
     question: "¿Lleváis comida a domicilio en toda la provincia de Ciudad Real?",
     answer:
-      "Desde Ciudad Real repartimos en la ciudad y en localidades cercanas. Pregunta por tu localidad. Si un pueblo entra en el radio, se puede pedir. En el límite, o si el punto es una finca fuera del casco, lo confirmamos al presupuestar.",
+      "Desde Ciudad Real repartimos en la ciudad y en localidades cercanas. Pregunta por tu localidad. Si el pueblo está en nuestra zona, se puede pedir. Si el punto es una finca fuera del casco, lo confirmamos al presupuestar.",
     home: true,
   },
   {
@@ -26,13 +26,13 @@ export const faqs: Faq[] = [
   {
     question: "¿Hacéis catering para monterías?",
     answer:
-      "Sí. Hay un servicio de catering para monterías y eventos de caza, con desayuno campero, almuerzo y comida. Cubrimos fincas y puntos de encuentro dentro de 60 km de Ciudad Real o de Puertollano. Hace falta la fecha, el lugar y un número aproximado de comensales para preparar el presupuesto.",
+      "Sí. Hay un servicio de catering para monterías y eventos de caza, con desayuno campero, almuerzo y comida. Cubrimos fincas y puntos de encuentro de nuestra zona de reparto. Hace falta la fecha, el lugar y un número aproximado de comensales para preparar el presupuesto.",
     home: true,
   },
   {
     question: "¿Trabajáis con colegios y guarderías?",
     answer:
-      "Sí, dentro del servicio de colectividades, junto con residencias y centros de mayores. El menú se prepara con el centro, incluyendo los alérgenos que nos indiquéis. La zona es Ciudad Real, Puertollano y el radio de 60 km.",
+      "Sí, dentro del servicio de colectividades, junto con residencias y centros de mayores. El menú se prepara con el centro, incluyendo los alérgenos que nos indiquéis. La zona es Ciudad Real, Puertollano y pueblos de alrededor.",
     home: true,
   },
   {
@@ -58,13 +58,13 @@ export const faqs: Faq[] = [
   {
     question: "¿Hacéis coffee break o catering para empresas en Ciudad Real?",
     answer:
-      "Sí. Llevamos coffee break, tapas y un catering pequeño a oficinas, salas y eventos de empresa en Ciudad Real, Puertollano y hasta 60 km. Hace falta la dirección, la hora y el número de personas. El presupuesto se envía por escrito. WhatsApp y teléfono: 675 601 543.",
+      "Sí. Llevamos coffee break, tapas y un catering pequeño a oficinas, salas y eventos de empresa en Ciudad Real, Puertollano y pueblos de alrededor. Hace falta la dirección, la hora y el número de personas. El presupuesto se envía por escrito. WhatsApp y teléfono: 675 601 543.",
     home: true,
   },
   {
     question: "¿Hacéis eventos que no sean de caza?",
     answer:
-      "Sí. Las celebraciones, las comidas de grupo y los menús para una ocasión concreta se piden como catering personalizado para eventos. Siempre dentro de Ciudad Real, Puertollano y 60 km, y siempre con un presupuesto previo.",
+      "Sí. Las celebraciones, las comidas de grupo y los menús para una ocasión concreta se piden como catering personalizado para eventos. Siempre dentro de Ciudad Real, Puertollano y pueblos de alrededor, y siempre con un presupuesto previo.",
   },
   {
     question: "¿Qué ingredientes utilizáis?",

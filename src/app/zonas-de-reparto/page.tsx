@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CallButton, WhatsappButton } from "@/components/Buttons";
 import { PageHero } from "@/components/PageHero";
 import { JsonLd } from "@/components/JsonLd";
-import { enabledLocalities, nearestHub, nearestKm } from "@/data/localities";
+import { enabledLocalities } from "@/data/localities";
 import { site } from "@/data/site";
 import { pageMeta } from "@/lib/seo";
 import { breadcrumbSchema, graph, localBusinessSchema } from "@/lib/schema";
@@ -10,7 +10,7 @@ import { breadcrumbSchema, graph, localBusinessSchema } from "@/lib/schema";
 export const metadata = pageMeta({
   title: "Zonas de reparto en Ciudad Real",
   description:
-    "Reparto de comida casera en Ciudad Real, Puertollano y hasta 60 km. Consulta si tu localidad entra.",
+    "Reparto de comida casera en Ciudad Real, Puertollano y pueblos de alrededor. Consulta si tu localidad entra.",
   path: "/zonas-de-reparto",
 });
 
@@ -27,33 +27,23 @@ export default function ZonasPage() {
         crumbs={crumbs}
         eyebrow="Zona"
         title="Dónde llega la comida casera a domicilio"
-        lead={`${site.areaSummary} La distancia es en línea recta desde el núcleo de Ciudad Real o de Puertollano. En el límite, y en fincas, se confirma al pedir presupuesto.`}
+        lead={`Repartimos en ${site.areaSummary} Si la entrega es en una finca o fuera del casco, se confirma al pedir presupuesto.`}
       />
       <div className="mx-auto max-w-6xl px-5 py-12">
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse text-left text-sm">
-            <caption className="sr-only">Localidades dentro del radio de reparto</caption>
-            <thead>
-              <tr className="border-b border-line text-ink">
-                <th className="py-3 pr-4 font-semibold">Localidad</th>
-                <th className="py-3 font-semibold">Centro más cercano</th>
-              </tr>
-            </thead>
-            <tbody>
-              {enabledLocalities.map((locality) => (
-                <tr key={locality.slug} className="border-b border-line">
-                  <td className="py-3 pr-4">
-                    <Link href={`/zonas-de-reparto/${locality.slug}`} className="font-medium text-green-dark underline-offset-2 hover:underline">
-                      {locality.name}
-                    </Link>
-                    {locality.edge ? <span className="ml-2 text-xs text-ink-soft">límite</span> : null}
-                  </td>
-                  <td className="py-3">{nearestHub(locality)} ({nearestKm(locality)} km)</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <h2 className="font-serif text-3xl text-green-deep">Localidades donde repartimos</h2>
+        <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {enabledLocalities.map((locality) => (
+            <li key={locality.slug}>
+              <Link
+                href={`/zonas-de-reparto/${locality.slug}`}
+                className="flex min-h-12 items-center justify-between rounded-2xl border border-line bg-paper px-4 py-3 font-medium text-green-dark hover:border-green"
+              >
+                {locality.name}
+                <span aria-hidden="true">→</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
       <section className="border-t border-line bg-paper" aria-labelledby="consulta-zona">
         <div className="mx-auto max-w-6xl px-5 py-16">

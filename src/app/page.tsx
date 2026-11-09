@@ -9,7 +9,7 @@ import { ServiceFinder } from "@/components/ServiceFinder";
 import { WeekMenu } from "@/components/WeekMenu";
 import { ZoneChecker, type ZoneEntry } from "@/components/ZoneChecker";
 import { faqs } from "@/data/faqs";
-import { enabledLocalities, localities, nearestHub, nearestKm } from "@/data/localities";
+import { enabledLocalities, localities } from "@/data/localities";
 import { site } from "@/data/site";
 import { faqSchema, graph, localBusinessSchema, organizationSchema, websiteSchema } from "@/lib/schema";
 
@@ -70,8 +70,7 @@ const zones: ZoneEntry[] = localities.map((locality) => ({
   slug: locality.slug,
   name: locality.name,
   enabled: locality.enabled,
-  km: Math.round(nearestKm(locality)),
-  hub: nearestHub(locality),
+  aliases: locality.aliases ?? [],
 }));
 
 const pillars = [
@@ -290,10 +289,10 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-5 py-16" aria-labelledby="zonas-title">
         <h2 id="zonas-title" className="font-serif text-4xl text-green-deep">¿Llegamos a tu pueblo?</h2>
         <p className="mt-3 max-w-3xl leading-relaxed text-ink-soft">
-          {site.areaSummary} Escribe tu localidad y te lo decimos.
+          Repartimos en {site.areaSummary} Escribe tu localidad y te lo decimos.
         </p>
         <div className="mt-6 max-w-2xl">
-          <ZoneChecker zones={zones} radiusKm={site.radiusKm} />
+          <ZoneChecker zones={zones} />
         </div>
         <ul className="mt-8 flex flex-wrap gap-2">
           {enabledLocalities.slice(0, 12).map((locality) => (
@@ -303,9 +302,6 @@ export default function HomePage() {
                 className="inline-flex rounded-full border border-line bg-paper px-3 py-1 text-sm hover:border-green"
               >
                 {locality.name}
-                <span className="sr-only">
-                  , a {nearestKm(locality)} km de {nearestHub(locality)}
-                </span>
               </Link>
             </li>
           ))}
