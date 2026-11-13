@@ -59,8 +59,8 @@ const audiences = [
   {
     title: "Monterías y caza",
     text: "Desayuno campero, almuerzo y comida en la finca para el día de caza.",
-    image: "/images/platos/real-migas.jpg",
-    alt: "Migas del pastor con uvas",
+    image: "/images/platos/real-migas-2.jpg",
+    alt: "Migas con chorizo y panceta en su envase",
     href: "/servicios/catering-monterias-eventos-caza",
     service: "Catering para monterías y caza",
   },
