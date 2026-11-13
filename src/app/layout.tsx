@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Great_Vibes, Outfit } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
+import Script from "next/script";
 import { Analytics } from "@/components/Analytics";
 import { CookieBanner } from "@/components/CookieBanner";
 import { Footer } from "@/components/Footer";
@@ -80,6 +81,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <MobileBar />
         <CookieBanner />
         <Analytics />
+        {/* Umami: estadísticas de visitas sin cookies ni datos personales, no requiere consentimiento. */}
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="82b07ec3-d1be-48a4-ad7c-bfc6d0ef7535"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

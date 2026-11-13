@@ -4,6 +4,9 @@ import { useEffect, useState, useSyncExternalStore } from "react";
 
 const key = "sep-consent";
 
+// El banner solo hace falta si hay Google Analytics configurado (usa cookies). Umami no usa cookies.
+const needsConsent = Boolean(process.env.NEXT_PUBLIC_GA_ID);
+
 function subscribe(onChange: () => void) {
   window.addEventListener("sep-consent", onChange);
   window.addEventListener("storage", onChange);
@@ -34,7 +37,7 @@ export function CookieBanner() {
     window.dispatchEvent(new Event("sep-consent"));
   }
 
-  if (!visible) return null;
+  if (!needsConsent || !visible) return null;
 
   return (
     <div className="fixed inset-x-3 bottom-20 z-50 rounded-3xl border border-line bg-paper p-5 shadow-lg md:bottom-4 md:left-auto md:right-4 md:max-w-md">
@@ -66,6 +69,7 @@ export function CookieBanner() {
 }
 
 export function CookieSettings() {
+  if (!needsConsent) return null;
   return (
     <button
       type="button"

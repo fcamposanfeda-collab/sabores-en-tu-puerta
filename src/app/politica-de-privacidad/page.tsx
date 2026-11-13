@@ -28,7 +28,7 @@ export default function PrivacyPage() {
       </p>
       <h2>Destinatarios</h2>
       <p>
-        Los datos del formulario se envían por correo electrónico mediante el servicio Web3Forms, que actúa como encargado del tratamiento. Si algún proveedor trata datos fuera del Espacio Económico Europeo, lo hace con las garantías previstas en el Reglamento General de Protección de Datos. No cedemos tus datos a terceros salvo obligación legal.
+        Los datos del formulario se envían por correo electrónico mediante el servicio Web3Forms, que actúa como encargado del tratamiento. Las estadísticas de visitas se miden con Umami sin cookies y sin datos que te identifiquen. Si algún proveedor trata datos fuera del Espacio Económico Europeo, lo hace con las garantías previstas en el Reglamento General de Protección de Datos. No cedemos tus datos a terceros salvo obligación legal.
       </p>
       <h2>Derechos</h2>
       <p>
