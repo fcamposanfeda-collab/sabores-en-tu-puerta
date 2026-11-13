@@ -129,7 +129,7 @@ export const dishes: Dish[] = [
       "Fideos cortos guisados con gambas, calamar y mejillones y sofrito de pimiento rojo. Ejemplo de primero para casa o para un menú de fin de semana.",
     categories: ["primeros", "infantiles", "especiales"],
     allergens: ["TODO: confirmar. Gluten, crustáceos, moluscos."],
-    image: "/images/platos/real-fideua.jpg",
+    image: "/images/platos/real-fideua-mesa.jpg",
     example: true,
   },
 ];
