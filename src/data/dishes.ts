@@ -123,13 +123,13 @@ export const dishes: Dish[] = [
     example: true,
   },
   {
-    slug: "fideua-de-verduras",
-    name: "Fideuá de verduras",
+    slug: "fideua-de-marisco",
+    name: "Fideuá de marisco",
     description:
-      "Fideos cortos sofritos con verdura de temporada, sin marisco. Ejemplo de primero para casa, colegio o menú basal.",
+      "Fideos cortos guisados con gambas, calamar y mejillones y sofrito de pimiento rojo. Ejemplo de primero para casa o para un menú de fin de semana.",
     categories: ["primeros", "infantiles", "especiales"],
-    allergens: ["TODO: confirmar. Gluten."],
-    image: "/images/platos/real-fideua-verduras.jpg",
+    allergens: ["TODO: confirmar. Gluten, crustáceos, moluscos."],
+    image: "/images/platos/real-fideua.jpg",
     example: true,
   },
 ];
