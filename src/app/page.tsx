@@ -51,8 +51,8 @@ const audiences = [
   {
     title: "Celebraciones",
     text: "Un menú a medida para una comida familiar, un cumpleaños o un evento.",
-    image: "/images/platos/real-solomillo.jpg",
-    alt: "Solomillo a la pimienta con patatas",
+    image: "/images/platos/real-medallon.jpg",
+    alt: "Medallones de cerdo al ajillo con patatas en su envase",
     href: "/servicios/catering-personalizado",
     service: "Catering personalizado para eventos",
   },
