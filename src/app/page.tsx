@@ -27,7 +27,7 @@ const audiences = [
   {
     title: "Personas mayores",
     text: "Menús adaptados en textura y dieta, para casa o para residencias y centros.",
-    image: "/images/platos/real-merluza-salsa-verde.jpg",
+    image: "/images/platos/real-merluza-salsa-verde-mesa.jpg",
     alt: "Merluza en salsa verde con almejas y guisantes en su envase",
     href: "/menus-especializados/mayores",
     service: "Comida a domicilio",
@@ -35,7 +35,7 @@ const audiences = [
   {
     title: "Colegios y guarderías",
     text: "Menús equilibrados para colectividades, con dietas adaptadas cuando hacen falta.",
-    image: "/images/platos/real-arroz-verduras-2.jpg",
+    image: "/images/platos/real-arroz-verduras-mesa.jpg",
     alt: "Arroz con verduras en su envase",
     href: "/servicios/colectividades",
     service: "Reparto a colectividades",
@@ -51,7 +51,7 @@ const audiences = [
   {
     title: "Celebraciones",
     text: "Un menú a medida para una comida familiar, un cumpleaños o un evento.",
-    image: "/images/platos/real-medallon.jpg",
+    image: "/images/platos/real-medallon-mesa.jpg",
     alt: "Medallones de cerdo al ajillo con patatas en su envase",
     href: "/servicios/catering-personalizado",
     service: "Catering personalizado para eventos",
@@ -59,7 +59,7 @@ const audiences = [
   {
     title: "Monterías y caza",
     text: "Desayuno campero, almuerzo y comida en la finca para el día de caza.",
-    image: "/images/platos/real-migas-2.jpg",
+    image: "/images/platos/real-migas-mesa.jpg",
     alt: "Migas con chorizo y panceta en su envase",
     href: "/servicios/catering-monterias-eventos-caza",
     service: "Catering para monterías y caza",

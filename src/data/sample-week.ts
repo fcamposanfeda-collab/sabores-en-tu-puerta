@@ -50,7 +50,7 @@ export const sampleWeek: MenuDay[] = [
   },
   {
     day: "Viernes",
-    image: "/images/platos/real-fideua.jpg",
+    image: "/images/platos/real-fideua-mesa.jpg",
     imageAlt: "Fideuá con gambas, calamar y mejillones en su envase",
     first: { name: "Fideuá de marisco", dish: "fideua-de-marisco" },
     second: { name: "Solomillo a la pimienta", dish: "solomillo-a-la-pimienta" },
