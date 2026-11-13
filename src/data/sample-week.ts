@@ -26,7 +26,7 @@ export const sampleWeek: MenuDay[] = [
   },
   {
     day: "Martes",
-    image: "/images/platos/real-albondigas.jpg",
+    image: "/images/platos/real-albondigas-bandeja.jpg",
     imageAlt: "Albóndigas en salsa de tomate en su envase",
     first: { name: "Arroz con verduras de la huerta", dish: "arroz-con-verduras" },
     second: { name: "Albóndigas en salsa de tomate" },
@@ -50,7 +50,7 @@ export const sampleWeek: MenuDay[] = [
   },
   {
     day: "Viernes",
-    image: "/images/platos/real-fideua-mesa.jpg",
+    image: "/images/platos/real-fideua-bandeja.jpg",
     imageAlt: "Fideuá con gambas, calamar y mejillones en su envase",
     first: { name: "Fideuá de marisco", dish: "fideua-de-marisco" },
     second: { name: "Solomillo a la pimienta", dish: "solomillo-a-la-pimienta" },
