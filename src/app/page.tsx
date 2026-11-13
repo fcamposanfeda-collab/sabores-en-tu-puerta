@@ -27,15 +27,15 @@ const audiences = [
   {
     title: "Personas mayores",
     text: "Menús adaptados en textura y dieta, para casa o para residencias y centros.",
-    image: "/images/platos/real-textura.jpg",
-    alt: "Puré y pescado desmigado, menú de textura adaptada",
+    image: "/images/platos/real-merluza-salsa-verde.jpg",
+    alt: "Merluza en salsa verde con almejas y guisantes en su envase",
     href: "/menus-especializados/mayores",
     service: "Comida a domicilio",
   },
   {
     title: "Colegios y guarderías",
     text: "Menús equilibrados para colectividades, con dietas adaptadas cuando hacen falta.",
-    image: "/images/platos/real-arroz-verduras.jpg",
+    image: "/images/platos/real-arroz-verduras-2.jpg",
     alt: "Arroz con verduras en su envase",
     href: "/servicios/colectividades",
     service: "Reparto a colectividades",
