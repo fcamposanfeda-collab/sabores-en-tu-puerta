@@ -49,12 +49,15 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "Comida casera a domicilio en Ciudad Real",
     description:
-      "Comida casera a domicilio en la provincia deCiudad Real",
+      "Comida casera a domicilio en la provincia de Ciudad Real",
   },
   twitter: { card: "summary_large_image" },
-  verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
-    ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
-    : undefined,
+  verification: {
+    ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION
+      ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
+      : {}),
+    other: { "msvalidate.01": "1A7CA94B7D9BD03F694BBFE5AFD572D6" },
+  },
   robots: { index: true, follow: true },
 };
 
