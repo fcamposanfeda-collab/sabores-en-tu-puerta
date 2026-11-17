@@ -19,7 +19,8 @@ export default function robots(): MetadataRoute.Robots {
   const origin = site.url.replace(/\/$/, "");
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow: ["/contacto/gracias/"] },
+      // /contacto/gracias/ no se bloquea aquí: lleva noindex y Google necesita rastrearla para verlo.
+      { userAgent: "*", allow: "/" },
       ...aiBots.map((userAgent) => ({ userAgent, allow: "/" })),
     ],
     sitemap: `${origin}/sitemap.xml`,
